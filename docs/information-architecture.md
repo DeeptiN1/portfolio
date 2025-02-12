@@ -7,3 +7,4 @@ nav_order: 9
 {: .no_toc }
 For [City Lights Bookstore](https://citylights.com/)
 
+![Information Architecture diagram](../images/IA-bookstore.png)
