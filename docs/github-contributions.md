@@ -8,7 +8,7 @@ nav_order: 4
 
 ## Metadata definitions
 [GitHub pull request](https://github.com/protontypes/open-sustainable-technology/pull/1025) \
-Created metadata definitions to simplify the collection by Open Sustainable Technology, of thousands of project data entries, enabling users to understand the source or calculations of values being stored.
+Created metadata definitions to simplify the collection of thousands of project data entries by Open Sustainable Technology, enabling users to understand the source or calculations of values being stored.
 
 ![Metadata definitions GitHUb PR](../images/metadata-definitions-pr.png)
 

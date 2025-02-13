@@ -33,7 +33,7 @@ SimpliCompense’s Inventory Management product must provide the following capab
 **Action items**:
   * Engineering managers will work with product leaders to create stories and tasks based on the development and testing of must-have features for the inventory management product.
   * Engineering leads will create Jira tickets for the finalized stories and tasks along with Acceptance Criteria in each ticket.
-  * Sprints will last one week from the start of the project and for the duration of the project.
+  * Sprints begin from the start date of the project and continue for the duration of the project. Each sprint will last for 1 week.
   * Beta testing of the product with test users must be completed by July 30.
 
-**Agenda for the next meeting**: Discussions with the product and design teams to finalize the frontend design for the inventory management product and user scenarios for beta testing.
+**Agenda for the next meeting**: Discussions with the product and design teams to finalize the front-end design for the inventory management product and user scenarios for beta testing.
