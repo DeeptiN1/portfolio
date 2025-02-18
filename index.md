@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Overview
 layout: home
 nav_order: 1
 description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
@@ -22,7 +22,8 @@ Technical Writer, Experienced Software Engineer
 * I have more than 5 years of technical writing experience and more than 10 years of software engineering experience.
   {: .fs-5 .fw-300 }
 
-* I have created feature and REST API documentation leading to seamless client integration of services developed by the team and improvement in API usability.
+* I have created feature and REST API documentation, leading to seamless client integration of services developed by the team and improvement in API usability.
+  {: .fs-5 .fw-300 }
 
 * I have set up documentation in a docs-as-code environment, saving 90% of time and effort spent on onboarding and troubleshooting processes.
   {: .fs-5 .fw-300 }
