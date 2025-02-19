@@ -5,6 +5,8 @@ nav_order: 9
 
 # Information Architecture
 {: .no_toc }
-For [City Lights Bookstore](https://citylights.com/)
+The information architecture diagram below is for [City Lights Bookstore](https://citylights.com/).
+
+--------------------------------------
 
 ![Information Architecture diagram](../images/IA-bookstore.png)

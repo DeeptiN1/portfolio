@@ -1,14 +1,15 @@
 ---
 title: API Documentation
-nav_order: 2
+nav_order: 4
 ---
 
 # API Documentation
 {: .no_toc }
+Documentation of a free REST API for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
-Documentation of a free REST exercise API from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
+----------------------
 
-## Body part exercise API
+## Body part ExerciseDB API
 `/exercises/bodyPart/{bodyPart}` provides information about exercises for the specified body part.
 
 ## Authentication and authorization

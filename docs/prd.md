@@ -1,10 +1,13 @@
 ---
 title: Product Requirements Document
-nav_order: 3
+nav_order: 4
 ---
 
-# Product Requirements Document
+# Product Requirements Document (PRD)
 {: .no_toc }
+This PRD is to develop inventory management features for a fictitious invoicing software called "SimpliCompense".
+
+-----------------------------
 
 ## SimpliCompense’s Inventory Management product requirements document.
 

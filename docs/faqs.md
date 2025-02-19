@@ -3,10 +3,12 @@ title: FAQs
 nav_order: 5
 ---
 
-# FAQs: SimpliCompense Invoicing Software
+# FAQs
 {: .no_toc }
+Answers to common questions about using "SimpliCompense", a fictitious invoicing software for creating and managing invoices.
 
-Answers to common questions about using SimpliCompense for creating and managing invoices.
+------------------
+
 
 ## How do I start using SimpliCompense for invoicing?
 To start using SimpliCompense for creating invoices, follow these steps:
