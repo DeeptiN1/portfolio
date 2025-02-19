@@ -13,7 +13,7 @@ Technical Writer, Experienced Software Engineer
 ## About Me
 {: .fs-7 .fw-300 }
 
-* I have a deep love for writing.
+* I possess a deep love for writing.
   {: .fs-5 .fw-300 }
 
 * I am passionate about structured writing and docs-as-code documentation approaches.
@@ -31,7 +31,7 @@ Technical Writer, Experienced Software Engineer
 * I have made open-source documentation contributions to GitHub projects, improving efficiency of user contributions toward these projects.
   {: .fs-5 .fw-300 }
 
-* I am a creative writer with online and print publications of short fiction and articles.
+* I am a creative writer with more than 20 online and print publications of short fiction and articles. Links to my online publications and my personal blog can found [here](https://deeptiwriting.wordpress.com/).
   {: .fs-5 .fw-300 }
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/deeptinalavade)

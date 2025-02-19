@@ -1,10 +1,13 @@
 ---
 title: Open-source contributions
-nav_order: 4
+nav_order: 2
 ---
 
 # Open-source GitHub contributions
 {: .no_toc }
+Below are links for my documentation-related contributions to open-source GitHub projects.
+
+--------------------------------
 
 ## Metadata definitions
 [GitHub pull request](https://github.com/protontypes/open-sustainable-technology/pull/1025) \
