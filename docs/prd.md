@@ -36,3 +36,11 @@ SimpliCompense’s invoicing software has around 8K active small business users.
 | Reporting capabilities.                                  | Reports on number of orders, sales, costs and profits are available.                 | Must-have | Real-time data on number of orders, sales, costs and profits is available and can be filtered. |                                                                                                    |
 | Sync orders with invoices.                               | Order creation and updates use existing invoices to synchronize purchase order data. | Must-have | The user can use existing invoices for order creation and updating.                            | Make invoice data available for integration with purchase orders.                                  |
 | Handle shipping labels.                                  | The user can create shipping labels.                                                 | Must-have | Items can be updated with shipping label information.                                          |                                                                                                    |
+
+## Releases
+
+| Release                                 | Date            | Features                                                                | Dependencies                                                                                      
+|:----------------------------------------|:----------------|:------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
+| SimpliCompense Inventory Management 1.0 | June 13, 2024   | Item and inventory creation and update.                                 | None.                                                                                             | 
+| SimpliCompense Inventory Management 1.5 | July 22, 2024   | Inventory tracking and purchase order creation and management.          | Inventory management.                                                                             |
+| SimpliCompense Inventory Management 2.0 | August 26, 2024 | Reporting capabilities and integration of invoices and purchase orders. | Purchase order and inventory management features. Invoice data must be available for integration. |

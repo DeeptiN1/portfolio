@@ -1,6 +1,6 @@
 ---
 title: Meeting Notes
-nav_order: 8
+nav_order: 9
 ---
 
 # Meeting Notes

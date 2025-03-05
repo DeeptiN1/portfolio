@@ -1,6 +1,6 @@
 ---
 title: User Persona
-nav_order: 10
+nav_order: 11
 ---
 
 # User Persona and Audience Learning Curve
