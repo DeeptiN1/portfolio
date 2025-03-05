@@ -1,6 +1,6 @@
 ---
 title: Swagger (Open API spec) Integration
-nav_order: 11
+nav_order: 5
 summary:
 swaggerfile: exercise_api
 swaggerkey: /exercises/equipment/{equipment}
