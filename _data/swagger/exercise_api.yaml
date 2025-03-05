@@ -1,0 +1,83 @@
+openapi: "3.0.0"
+info:
+  title: "ExerciseDB API"
+  description: "API to fetch exercises based on equipment."
+  version: "1.0.0"
+
+servers:
+  - url: "https://exercisedb.p.rapidapi.com"
+    description: "ExerciseDB API Server"
+
+paths:
+  /exercises/equipment/{equipment}:
+    get:
+      summary: "Get exercises by equipment"
+      description: "Retrieve a list of exercises for the specified equipment type."
+      produces:
+        - "application/json"
+      parameters:
+        - name: equipment
+          in: path
+          required: true
+          schema:
+            type: string
+          description: "Equipment for exercises"
+          example: assisted
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 10
+          description: "Number of exercises retrieved for the equipment."
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+          description: "Numerical position from the entire result set. Excludes first offset number of exercises from result set."
+      responses:
+        "200":
+          description: "Successful response with exercise details."
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Exercise"
+        "400":
+          description: "Bad request. Invalid parameters."
+        "401":
+          description: "Unauthorized. Invalid API key."
+        "500":
+          description: "Internal server error."
+
+components:
+  schemas:
+    Exercise:
+      type: object
+      properties:
+        id:
+          type: string
+          description: "Unique exercise ID"
+        name:
+          type: string
+          description: "Name of the exercise"
+        equipment:
+          type: string
+          description: "Equipment used"
+        target:
+          type: string
+          description: "Target muscle group"
+        bodyPart:
+          type: string
+          description: "Body part involved"
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: "X-RapidAPI-Key"
+
+security:
+  - ApiKeyAuth: []
