@@ -9,14 +9,14 @@ servers:
     description: "ExerciseDB API Server"
 
 paths:
-  /exercises/equipment/{equipment}:
+  /exercises/equipment/{type}:
     get:
-      summary: "Get exercises by equipment"
+      summary: "Get exercises by equipment type."
       description: "Retrieve a list of exercises for the specified equipment type."
       produces:
         - "application/json"
       parameters:
-        - name: equipment
+        - name: type
           in: path
           required: true
           schema:
@@ -78,6 +78,7 @@ components:
       type: apiKey
       in: header
       name: "X-RapidAPI-Key"
+      description: "API key required for a successful request"
 
 security:
   - ApiKeyAuth: []
