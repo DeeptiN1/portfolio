@@ -28,7 +28,7 @@ GET `/exercises/equipment/{type}`
 
 {% include swagger_parsers/getattribute.md attribute="description" %}
 
-### Authorization Header parameters
+### Authentication Header parameters
 
 {% include swagger_parsers/getauthheaders.md paramtype="header" %}
 
