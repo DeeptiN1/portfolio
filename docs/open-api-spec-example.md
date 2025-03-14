@@ -60,121 +60,61 @@ Follow these steps to retrieve a valid API key to execute the API:
 
 Following are examples of the API execution using Postman and the cURL command.
 
-* **Postman** 
+<details>
+<summary>Postman</summary>
+<p>
+Enter the following URL: <span style="background-color: #F0F0F0">https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=5&offset=2</span> in Postman and specify the API Key and its value under <span style="background-color: #F0F0F0">Authorization</span>.
+</p>
 
-In Postman, enter the URL: `https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=5&offset=2` and specify the API Key and its value under `Authorization`.
+<img src="../images/exercise-api-by-equip-postman.png" width="900" height="900" />
 
-![Exercise retrieval by equipment type in Postman](../images/exercise-api-by-equip-postman.png)
+</details>
 
-* **cURL**
+<details>
+<summary>cURL</summary>
+<br>
+Use the following cURL command and substitute <span style="background-color: #F0F0F0">API_Key</span> with the actual value.
 
-In the cURL command below, substitute `<API_Key>` with the actual value.
+<br>
 
-`curl -X GET "https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=5&offset=2" -H "accept: application/json" -H 'X-RapidAPI-Key: <API_Key> | python3 -m json.tool`
+<span style="background-color: #F0F0F0">curl -X GET "https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=1&offset=3" -H "accept: application/json" -H 'X-RapidAPI-Key: API_Key' | python3 -m json.tool</span>
 
-```
-% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Dload  Upload   Total   Spent    Left  Speed
-100  3221  100  3221    0     0   9240      0 --:--:-- --:--:-- --:--:--  9255
+<br>
+
+Sample result:
+
+<br>
+
+<pre style="background-color: #F0F0F0">
+<code>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   746  100   746    0     0    802      0 --:--:-- --:--:-- --:--:--   802
 [
-  {
-    "bodyPart": "waist",
-    "equipment": "assisted",
-    "gifUrl": "https://v2.exercisedb.io/image/aX3mMRjURJY5cC",
-    "id": "0012",
-    "name": "assisted lying leg raise with lateral throw down",
-    "target": "abs",
-    "secondaryMuscles": [
-      "hip flexors",
-      "obliques"
-    ],
-    "instructions": [
-      "Lie flat on your back with your legs extended and your arms by your sides.",
-      "Place your hands under your glutes for support.",
-      "Engage your abs and lift your legs off the ground, keeping them straight.",
-      "While keeping your legs together, lower them to one side until they are a few inches above the ground.",
-      "Pause for a moment, then lift your legs back to the starting position.",
-      "Repeat the movement to the other side.",
-      "Continue alternating sides for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "waist",
-    "equipment": "assisted",
-    "gifUrl": "https://v2.exercisedb.io/image/AIk1PPwtBwt8ag",
-    "id": "0013",
-    "name": "assisted lying leg raise with throw down",
-    "target": "abs",
-    "secondaryMuscles": [
-      "hip flexors",
-      "quadriceps"
-    ],
-    "instructions": [
-      "Lie flat on your back with your legs extended and your arms by your sides.",
-      "Place your hands under your glutes for support.",
-      "Engage your core and lift your legs off the ground, keeping them straight.",
-      "Raise your legs until they are perpendicular to the ground.",
-      "Lower your legs back down to the starting position.",
-      "Simultaneously, throw your legs down towards the ground, keeping them straight.",
-      "Raise your legs back up to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "upper legs",
-    "equipment": "assisted",
-    "gifUrl": "https://v2.exercisedb.io/image/gH-77Vo12c1KiY",
-    "id": "0016",
-    "name": "assisted prone hamstring",
-    "target": "hamstrings",
-    "secondaryMuscles": [
-      "glutes",
-      "lower back"
-    ],
-    "instructions": [
-      "Lie face down on a mat or bench with your legs fully extended.",
-      "Have a partner or use a resistance band to secure your ankles.",
-      "Engage your hamstrings and lift your legs towards your glutes, keeping your knees straight.",
-      "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "upper arms",
-    "equipment": "assisted",
-    "gifUrl": "https://v2.exercisedb.io/image/vZthWqM1M9R5Fk",
-    "id": "0018",
-    "name": "assisted standing triceps extension (with towel)",
-    "target": "triceps",
-    "secondaryMuscles": [
-      "shoulders"
-    ],
-    "instructions": [
-      "Stand with your feet shoulder-width apart and hold a towel with both hands behind your head.",
-      "Keep your elbows close to your ears and your upper arms stationary.",
-      "Slowly extend your forearms upward, squeezing your triceps at the top.",
-      "Pause for a moment, then slowly lower the towel back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "chest",
-    "equipment": "assisted",
-    "gifUrl": "https://v2.exercisedb.io/image/auWrVcwiDJGE7z",
-    "id": "1259",
-    "name": "behind head chest stretch",
-    "target": "pectorals",
-    "secondaryMuscles": [
-      "shoulders",
-      "triceps"
-    ],
-    "instructions": [
-      "Stand tall with your feet shoulder-width apart.",
-      "Interlace your fingers behind your head with your elbows pointing outwards.",
-      "Slowly squeeze your shoulder blades together and push your chest forward.",
-      "Hold the stretch for 15-30 seconds.",
-      "Release the stretch and repeat as desired."
-    ]
-  }
+    {
+        "bodyPart": "waist",
+        "equipment": "assisted",
+        "gifUrl": "https://v2.exercisedb.io/image/4mzaZNWkQxOJ6i",
+        "id": "0013",
+        "name": "assisted lying leg raise with throw down",
+        "target": "abs",
+        "secondaryMuscles": [
+            "hip flexors",
+            "quadriceps"
+        ],
+        "instructions": [
+            "Lie flat on your back with your legs extended and your arms by your sides.",
+            "Place your hands under your glutes for support.",
+            "Engage your core and lift your legs off the ground, keeping them straight.",
+            "Raise your legs until they are perpendicular to the ground.",
+            "Lower your legs back down to the starting position.",
+            "Simultaneously, throw your legs down towards the ground, keeping them straight.",
+            "Raise your legs back up to the starting position.",
+            "Repeat for the desired number of repetitions."
+        ]
+    }
 ]
-```
+</code>
+</pre>
+</details>
+
