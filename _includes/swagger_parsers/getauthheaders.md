@@ -4,7 +4,7 @@
 <table>
     <thead>
     <tr>
-        <th>Name</th><th>Type</th><th>Description</th><th>Required</th>
+        <th>Name</th><th>Type</th><th>Description</th><th>Required?</th>
     </tr>
     </thead>
     <!-- Add Header Parameter Support (API Key) -->
