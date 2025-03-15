@@ -118,3 +118,288 @@ Sample result:
 </pre>
 </details>
 
+### Code samples for API execution
+
+The following are code snippets in Java, Node.js and Python to execute the API.
+
+<details>
+<summary>Java</summary>
+To execute the API using Java, do the following:
+
+<ul>
+<li>Ensure the latest recommended JDK version is installed.</li>
+<li>Create a file named <pre style="background-color: #F0F0F0">
+  <code>ExerciseDBApiRequest.java</code></pre>
+</li>
+<li>Paste the following code:
+
+<pre style="background-color: #F0F0F0">
+<code>
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class ExerciseDBApiRequest {
+public static void main(String[] args) {
+try {
+// Define API endpoint
+String apiUrl = "https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=1&offset=3";
+            // Replace with the actual API key value
+            String apiKey = "API_KEY";
+
+            // Create URL object
+            URL url = new URL(apiUrl);
+
+            // Open connection
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            // Set request method to GET
+            connection.setRequestMethod("GET");
+
+            // Set request headers
+            connection.setRequestProperty("Accept", "application/json");
+            connection.setRequestProperty("X-RapidAPI-Key", apiKey);
+
+            // Get response code
+            int responseCode = connection.getResponseCode();
+            System.out.println("Response Code: " + responseCode);
+
+            // Read response if successful (200 OK)
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                BufferedReader in = new BufferedReader(new InputStreamReader
+                        (connection.getInputStream()));
+                String inputLine;
+                StringBuilder response = new StringBuilder();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+
+                // Print the response body
+                System.out.println("Response Body: " + response.toString());
+            } else {
+                System.out.println("Failed to fetch data. HTTP Response Code: " + responseCode);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+</code>
+</pre>
+</li>
+
+<li>Follow these steps to run the Java program in a command-line interface or terminal:
+<ul>
+  <li>Replace API_KEY with the actual API key value.</li>
+  <li>Compile the Java file:
+    <pre style="background-color: #F0F0F0">
+    <code>javac ExerciseDBApiRequest.java</code></pre>
+  </li>
+  <li>Run the Java program: <pre style="background-color: #F0F0F0">
+    <code>java ExerciseDBApiRequest.java</code></pre>
+  </li>
+</ul>
+</li>
+<li>Expect the following output:
+<pre style="background-color: #F0F0F0">
+<code>
+Response Code: 200
+Response Body: [{"bodyPart":"waist","equipment":"assisted","gifUrl":"https://v2.exercisedb.io
+/image/ey4Z0XPQHgcfiZ","id":"0013","name":"assisted lying leg raise with throw down",
+"target":"abs","secondaryMuscles":["hip flexors","quadriceps"],"instructions":["Lie flat on 
+your back with your legs extended and your arms by your sides.","Place your hands under your 
+glutes for support.","Engage your core and lift your legs off the ground, keeping 
+them straight.","Raise your legs until they are perpendicular to the ground.","Lower your legs 
+back down to the starting position.","Simultaneously, throw your legs down towards the ground, 
+keeping them straight.","Raise your legs back up to the starting position.","Repeat for the 
+desired number of repetitions."]}]
+</code>
+</pre>
+</li>
+</ul>
+</details>
+
+<details>
+<summary>Node.js</summary>
+To execute the API using Node.js, do the following:
+
+<ul>
+<li>Ensure the latest recommended Node.js version is installed.</li>
+<li>Create a file named <pre style="background-color: #F0F0F0">
+  <code>fetch_exercises.js</code></pre>
+</li>
+<li>Paste the following code:
+
+<pre style="background-color: #F0F0F0">
+<code>
+const https = require('https');
+
+const options = {
+    hostname: 'exercisedb.p.rapidapi.com',
+    path: '/exercises/equipment/assisted?limit=1&offset=3',
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+        'X-RapidAPI-Key': 'API_KEY' // Replace with actual API key value
+    }
+};
+
+const req = https.request(options, (res) => {
+    let data = '';
+
+    res.on('data', (chunk) => {
+        data += chunk;
+    });
+
+    res.on('end', () => {
+        console.log("Response Code:", res.statusCode);
+        console.log("Response Body:", JSON.stringify(JSON.parse(data), null, 2));
+    });
+});
+
+req.on('error', (error) => {
+    console.error("Error fetching data:", error.message);
+});
+
+req.end();
+</code>
+</pre>
+</li>
+
+<li>Follow these steps to run the Node.js program in a command-line interface or terminal:
+<ul>
+  <li>Replace API_KEY with the actual API key value.</li>
+  <li>Run the Node.js code: <pre style="background-color: #F0F0F0">
+    <code>node fetch_exercises.js</code></pre>
+  </li>
+</ul>
+</li>
+<li>Expect the following output:
+<pre style="background-color: #F0F0F0">
+<code>
+Response Code: 200
+Response Body: [
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://v2.exercisedb.io/image/ey4Z0XPQHgcfiZ",
+    "id": "0013",
+    "name": "assisted lying leg raise with throw down",
+    "target": "abs",
+    "secondaryMuscles": [
+      "hip flexors",
+      "quadriceps"
+    ],
+    "instructions": [
+      "Lie flat on your back with your legs extended and your arms by your sides.",
+      "Place your hands under your glutes for support.",
+      "Engage your core and lift your legs off the ground, keeping them straight.",
+      "Raise your legs until they are perpendicular to the ground.",
+      "Lower your legs back down to the starting position.",
+      "Simultaneously, throw your legs down towards the ground, keeping them straight.",
+      "Raise your legs back up to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ]
+  }
+]
+</code>
+</pre>
+</li>
+</ul>
+</details>
+
+<details>
+<summary>Python</summary>
+To execute the API using Python, do the following:
+
+<ul>
+<li>Ensure the latest recommended Python version is installed.</li>
+<li>Create a file named <pre style="background-color: #F0F0F0">
+  <code>fetch_exercises.py</code></pre>
+</li>
+<li>Paste the following code:
+
+<pre style="background-color: #F0F0F0">
+<code>
+import requests
+import json
+
+# API endpoint
+url = "https://exercisedb.p.rapidapi.com/exercises/equipment/assisted"
+
+# Replace with the actual API key value
+api_key = "API_KEY"
+
+# Headers for the request
+headers = {
+    "accept": "application/json",
+    "X-RapidAPI-Key": api_key
+}
+
+# Query parameters
+params = {
+    "limit": 1,
+    "offset": 3
+}
+
+# Send GET request
+response = requests.get(url, headers=headers, params=params)
+
+# Check if request was successful
+if response.status_code == 200:
+    # Pretty-print JSON response
+    print("Response Code:", response.status_code)
+    print("Response Body:", json.dumps(response.json(), indent=2))
+else:
+    print("Error:", response.status_code, response.text)
+</code>
+</pre>
+</li>
+
+<li>Follow these steps to run the Python program in a command-line interface or terminal:
+<ul>
+  <li>Replace API_KEY with the actual API key value.</li>
+  <li>Install the requests library (if not installed):
+    <pre style="background-color: #F0F0F0">
+    <code>pip3 install requests</code></pre>
+  </li>
+  <li>Run the Python code: <pre style="background-color: #F0F0F0">
+    <code>python3 fetch_exercises.py</code></pre></li>
+</ul>
+</li>
+<li>Expect the following output:
+<pre style="background-color: #F0F0F0">
+<code>
+Response Code: 200
+Response Body: [
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://v2.exercisedb.io/image/ey4Z0XPQHgcfiZ",
+    "id": "0013",
+    "name": "assisted lying leg raise with throw down",
+    "target": "abs",
+    "secondaryMuscles": [
+      "hip flexors",
+      "quadriceps"
+    ],
+    "instructions": [
+      "Lie flat on your back with your legs extended and your arms by your sides.",
+      "Place your hands under your glutes for support.",
+      "Engage your core and lift your legs off the ground, keeping them straight.",
+      "Raise your legs until they are perpendicular to the ground.",
+      "Lower your legs back down to the starting position.",
+      "Simultaneously, throw your legs down towards the ground, keeping them straight.",
+      "Raise your legs back up to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ]
+  }
+]
+</code>
+</pre>
+</li>
+</ul>
+</details>
