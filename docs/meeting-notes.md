@@ -5,7 +5,7 @@ nav_order: 9
 
 # Meeting Notes
 {: .no_toc }
-These meeting notes are for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense".
+Meeting notes for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense".
 
 ------------------------------------
 

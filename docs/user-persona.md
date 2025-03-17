@@ -5,7 +5,7 @@ nav_order: 11
 
 # User Persona and Audience Learning Curve
 {: .no_toc }
-The following is an exercise for creating a sample user persona and for plotting an audience learning curve for this user.
+An exercise for creating a sample user persona and plotting an audience learning curve for the user.
 
 ---------------------------------------------------
 

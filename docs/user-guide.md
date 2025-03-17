@@ -5,7 +5,7 @@ nav_order: 3
 
 # User Guide
 {: .no_toc }
-This user guide is for free REST APIs for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
+User guide for free REST APIs for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
 -----------------------
 

@@ -1,9 +1,16 @@
 ---
-title: API Execution
-parent: Swagger (Open API spec) Integration
-nav_order: 2
+title: API Key
+parent: API Execution
+nav_order: 1
 ---
-# API Execution
+
+# API Key
+
+Retrieving a valid API key.
+
+----------------------
+
+## Authentication and authorization
 
 Follow these steps to retrieve a valid API key to execute the API:
 * Create an account on [Rapid API](https://rapidapi.com/auth/sign-up).

@@ -6,6 +6,8 @@ nav_order: 1
 
 # Java code sample
 
+----------------------
+
 To execute the API using Java, do the following:
 
 * Ensure the latest recommended JDK version is installed.
@@ -66,7 +68,7 @@ public class ExerciseDBApiRequest {
 }
 ```
 
-* Replace API_KEY with the actual API key value.
+* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
 * Compile the Java file in a command-line interface or terminal:
 ```shell
 javac ExerciseDBApiRequest.java

@@ -6,6 +6,8 @@ nav_order: 3
 
 # Python code sample
 
+----------------------
+
 To execute the API using Python, do the following:
 
 * Ensure the latest recommended Python version is installed.
@@ -45,7 +47,7 @@ else:
     print("Error:", response.status_code, response.text)
 ```
 
-* Replace API_KEY with the actual API key value.
+* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
 * Install the requests library (if not installed):
 ```shell
 pip3 install requests
