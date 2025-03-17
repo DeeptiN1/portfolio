@@ -1,6 +1,6 @@
 ---
 title: Code Samples
-parent: GET exercises by equipment
+parent: GET exercises by equipment type
 nav_order: 2
 ---
 
