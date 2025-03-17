@@ -8,7 +8,7 @@ nav_order: 3
 
 ----------------------
 
-Use the following cURL command and substitute `API_Key` with the actual [API_Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
+Use the following cURL command and substitute `API_Key` with the actual [API_Key value](../api-key).
 
 ```shell
 curl -X GET "https://exercisedb.p.rapidapi.com/exercises/equipment/assisted?limit=1&offset=3" -H "accept: application/json" -H 'X-RapidAPI-Key: API_Key' | python3 -m json.tool

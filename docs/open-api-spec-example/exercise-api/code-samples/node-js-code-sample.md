@@ -46,7 +46,7 @@ req.on('error', (error) => {
 req.end();
 ```
 
-* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
+* Replace API_KEY with the [API Key value](../../api-execution/api-key).
 * Run the Node.js code in a command-line interface or terminal: 
 ```shell
 node fetch_exercises.js
