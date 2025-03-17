@@ -47,7 +47,7 @@ else:
     print("Error:", response.status_code, response.text)
 ```
 
-* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
+* Replace API_KEY with the [API Key value](../../api-execution/api-key).
 * Install the requests library (if not installed):
 ```shell
 pip3 install requests

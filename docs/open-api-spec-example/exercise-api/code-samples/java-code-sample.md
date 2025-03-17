@@ -68,7 +68,7 @@ public class ExerciseDBApiRequest {
 }
 ```
 
-* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
+* Replace API_KEY with the [API Key value](../../api-execution/api-key).
 * Compile the Java file in a command-line interface or terminal:
 ```shell
 javac ExerciseDBApiRequest.java
