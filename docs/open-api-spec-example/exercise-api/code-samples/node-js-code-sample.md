@@ -6,6 +6,8 @@ nav_order: 2
 
 # Node.js code sample
 
+----------------------
+
 To execute the API using Node.js, do the following:
 
 * Ensure the latest recommended Node.js version is installed.
@@ -44,7 +46,7 @@ req.on('error', (error) => {
 req.end();
 ```
 
-* Replace API_KEY with the actual API key value.
+* Replace API_KEY with the [API Key value]({{ site.baseurl }}/docs/open-api-spec-example/exercise-api/api-execution/api-key).
 * Run the Node.js code in a command-line interface or terminal: 
 ```shell
 node fetch_exercises.js

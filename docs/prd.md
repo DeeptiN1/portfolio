@@ -5,7 +5,7 @@ nav_order: 4
 
 # Product Requirements Document (PRD)
 {: .no_toc }
-This PRD is to develop inventory management features for a fictitious invoicing software called "SimpliCompense".
+PRD to develop inventory management features for a fictitious invoicing software called "SimpliCompense".
 
 -----------------------------
 

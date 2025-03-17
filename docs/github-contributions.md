@@ -5,7 +5,7 @@ nav_order: 2
 
 # Open-source GitHub contributions
 {: .no_toc }
-Below are links for my documentation-related contributions to open-source GitHub projects.
+Documentation-related contributions to open-source GitHub projects.
 
 --------------------------------
 
