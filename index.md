@@ -19,7 +19,7 @@ Technical Writer, Experienced Software Engineer
 * I am passionate about structured writing and docs-as-code documentation approaches.
   {: .fs-5 .fw-300 }
 
-* I have more than 5 years of technical writing experience and more than 10 years of software engineering experience.
+* I have around 5 years of technical writing experience and more than 10 years of software engineering experience.
   {: .fs-5 .fw-300 }
 
 * I have created feature and REST API documentation, leading to seamless client integration of services developed by the team and improvement in API usability.
