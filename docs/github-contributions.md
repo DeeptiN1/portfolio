@@ -16,7 +16,7 @@ Created metadata definitions to simplify the collection of thousands of project 
 ![Metadata definitions GitHUb PR](../images/metadata-definitions-pr.png)
 
 ## Asciidoc style guide
-[AsciiDoc style guide](https://github.com/JustServe-Resources/Documentation/blob/main/src/docs/asciidoc/README.md) \
+[GitHub pull request](https://github.com/JustServe-Resources/Documentation/pull/10) \
 Created an AsciiDoc style guide for the zendesk JustServe platform documentation, ensuring adherence to standards and consistency in documentation.
 
 ![AsciiDoc style guide GitHUb PR](../images/asciidoc-style-guide-pr.png)
