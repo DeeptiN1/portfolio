@@ -20,3 +20,9 @@ Created metadata definitions to simplify the collection of thousands of project 
 Created an AsciiDoc style guide for the zendesk JustServe platform documentation, ensuring adherence to standards and consistency in documentation.
 
 ![AsciiDoc style guide GitHUb PR](../images/asciidoc-style-guide-pr.png)
+
+## Contribution to NGINX documentation
+[GitHub pull request to document config file limits](https://github.com/nginx/documentation/pull/431) \
+Contributing to NGINX open-source documentation to enhance the product and help users.
+
+![NGINX Config file size GitHUb PR](../images/nginx_documentation_pr.png)
