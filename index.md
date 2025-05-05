@@ -10,8 +10,6 @@ permalink: /
 Technical Writer, Experienced Software Engineer
 {: .fs-5 .fw-300 }
 
-<img src="/docs/images/deepti-photo.png" width="180" height="180">
-
 ## About Me
 {: .fs-7 .fw-300 }
 
