@@ -1,4 +1,15 @@
-Deepti's Technical Writing Portfolio
+# Deepti's Technical Writing Portfolio
 
-* This repository is used for GitHub pages that showcase samples of Deepti's technical writing (API documentation, OpenAPI specification, user guide, PRD, Information Architecture, FAQs, and so on).
-* The site uses [Just the Docs,](https://github.com/just-the-docs/just-the-docs) a documentation theme for Jekyll.
+**Live site: [https://deeptin1.github.io/portfolio/](https://deeptin1.github.io/portfolio/)**
+
+This repository powers a GitHub Pages site that showcases samples of Deepti's technical writing (API documentation, OpenAPI specification, user guide, PRD, Information Architecture, FAQs, and so on).
+
+The site uses [Just the Docs](https://github.com/just-the-docs/just-the-docs), a documentation theme for Jekyll.
+
+## Running locally
+
+```
+bundle exec jekyll serve --baseurl ""
+```
+
+Site will be available at `http://127.0.0.1:4000/`.
