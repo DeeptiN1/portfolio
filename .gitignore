@@ -31,3 +31,6 @@ node_modules
 *.gem
 .bundle
 .ruby-version
+
+# Used for automated test results and metadata.
+tmp/
