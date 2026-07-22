@@ -6,12 +6,19 @@ description: "Deepti Nalavade's technical writing portfolio, showcasing API docu
 permalink: /
 ---
 
+<div class="d-flex flex-justify-between" style="align-items: center;" markdown="1">
+<div markdown="1">
+
 # Deepti Nalavade
 Technical Writer, Experienced Software Engineer
 {: .fs-5 .fw-300 }
 
+</div>
+<div style="margin-right: 9rem;"><img src="{{ '/docs/images/deepti-photo.png' | relative_url }}" width="150" height="150" alt="Deepti Nalavade" style="border-radius: 50%; object-fit: cover; flex-shrink: 0;"></div>
+</div>
+
 ## About Me
-{: .fs-7 .fw-300 }
+{: .fs-7 .fw-300 style="margin-top: -1rem;" }
 
 I'm a Senior Technical Writer with 15+ years of combined experience across software engineering and technical writing, including developer infrastructure, docs-as-code platforms, CI/CD publishing pipelines, and recently, AI-assisted documentation ecosystems.
 {: .fs-5 .fw-300 }
