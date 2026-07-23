@@ -1,5 +1,5 @@
 ---
-title: Content strategy & design
+title: Content and Strategy
 has_children: true
 nav_order: 4
 ---

@@ -1,6 +1,6 @@
 ---
 title: User Persona
-parent: Content strategy & design
+parent: Content and Strategy
 nav_order: 1
 ---
 
