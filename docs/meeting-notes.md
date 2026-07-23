@@ -1,6 +1,7 @@
 ---
 title: Meeting Notes
-nav_order: 9
+parent: SimpliCompense — product documentation suite
+nav_order: 3
 ---
 
 # Meeting Notes
@@ -8,6 +9,13 @@ nav_order: 9
 Meeting notes for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense".
 
 ------------------------------------
+
+> **Context**
+> - **Audience:** Engineering team members executing the feature.
+> - **My role:** Authored the meeting notes by capturing decisions and translating PRD requirements into action items.
+> - **Tools:** Markdown, standard meeting-minutes format.
+> - **Outcome:** A documented sprint plan with owners, a ticketing convention, and a beta-testing deadline.
+{: .note }
 
 **Topic**: Engineering team meeting to discuss development and testing of priority features for SimpliCompense’s Inventory Management product.
 

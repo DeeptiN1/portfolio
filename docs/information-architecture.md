@@ -1,6 +1,7 @@
 ---
 title: Information Architecture
-nav_order: 10
+parent: Content strategy & design
+nav_order: 2
 ---
 
 # Information Architecture

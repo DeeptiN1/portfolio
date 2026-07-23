@@ -1,6 +1,7 @@
 ---
 title: Open-source contributions
-nav_order: 2
+parent: Open source
+nav_order: 1
 ---
 
 # Open-source GitHub contributions
@@ -8,6 +9,13 @@ nav_order: 2
 Documentation-related contributions to open-source GitHub projects.
 
 --------------------------------
+
+> **Context**
+> - **Audience:** Maintainers and users of the open-source projects I contributed to.
+> - **My role:** External contributor who proposed and authored each change via pull request, following each project's existing style guide and review process.
+> - **Tools:** Markdown, AsciiDoc, GitHub.
+> - **Outcome:** Reviewed/merged PRs improving metadata clarity, style consistency, and configuration documentation for users outside the maintaining team.
+{: .note }
 
 ## Metadata definitions
 [GitHub pull request](https://github.com/protontypes/open-sustainable-technology/pull/1025) \

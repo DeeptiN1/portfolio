@@ -1,6 +1,7 @@
 ---
 title: User Guide
-nav_order: 3
+parent: Developer documentation
+nav_order: 1
 ---
 
 # User Guide
@@ -8,6 +9,13 @@ nav_order: 3
 User guide for free REST APIs for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
 -----------------------
+
+> **Context**
+> - **Audience:** Developers evaluating or newly integrating the ExerciseDB API into a fitness app.
+> - **My role:** Wrote the getting-started guide and linked it to the API reference for auth details.
+> - **Tools:** Markdown, Jekyll, cURL, Postman.
+> - **Outcome:** An end-to-end path from the purpose of the API to a first successful authenticated request.
+{: .note }
 
 ## What are ExerciseDB APIs?
 ExerciseDB APIs are freely available REST APIs from [rapidapi.com](https://rapidapi.com/search/Health%20and%20Fitness?sortBy=ByRelevance), providing access to a comprehensive database of more than 1300 exercises for different body parts.

@@ -1,6 +1,7 @@
 ---
 title: API Documentation
-nav_order: 4
+parent: Developer documentation
+nav_order: 2
 ---
 
 # API Documentation
@@ -8,6 +9,13 @@ nav_order: 4
 Documentation of a free REST API for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
 ----------------------
+
+> **Context**
+> - **Audience:** Backend and mobile developers integrating the ExerciseDB REST API.
+> - **My role:** Wrote the full reference for authentication, endpoint, parameters, sample request/response, and response codes.
+> - **Tools:** Markdown, Jekyll, cURL.
+> - **Outcome:** A self-service reference a developer can use to authenticate and make a successful call without outside help.
+{: .note }
 
 ## Body part ExerciseDB API
 `/exercises/bodyPart/{bodyPart}` provides information about exercises for the specified body part.

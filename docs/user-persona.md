@@ -1,6 +1,7 @@
 ---
 title: User Persona
-nav_order: 11
+parent: Content strategy & design
+nav_order: 1
 ---
 
 # User Persona and Audience Learning Curve

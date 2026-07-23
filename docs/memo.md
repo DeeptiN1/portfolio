@@ -1,6 +1,7 @@
 ---
 title: Memo
-nav_order: 8
+parent: SimpliCompense — product documentation suite
+nav_order: 2
 ---
 
 # Memo
@@ -8,6 +9,13 @@ nav_order: 8
 Memo for all engineering managers working in a company that has developed a fictitious invoicing software called "SimpliCompense".
 
 -------------------------
+
+> **Context**
+> - **Audience:** Engineering managers and leadership.
+> - **My role:** Authored the memo communicating a business-driven schedule change.
+> - **Tools:** Markdown, standard business-memo format (To/From/Date/Subject).
+> - **Outcome:** Leadership-aligned communication of an accelerated deadline and its staffing impact, ahead of the requirements walkthrough.
+{: .note }
 
 **TO**: All engineering managers working on SimpliCompense’s Inventory management product
 
