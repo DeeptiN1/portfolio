@@ -1,12 +1,20 @@
 ---
 title: Release Notes
-nav_order: 7
+parent: SimpliCompense — product documentation suite
+nav_order: 4
 ---
 
 # Release Notes
 Release notes for a fictitious invoicing software called "SimpliCompense".
 
 -------------------------
+
+> **Context**
+> - **Audience:** End users and customers of SimpliCompense.
+> - **My role:** Authored the release notes.
+> - **Tools:** Markdown, release-notes conventions (New Features / Bug Fixes / Deprecated).
+> - **Outcome:** A scannable summary of what changed in version 4.1, including deprecations that affect existing user workflows.
+{: .note }
 
 ## SimpliCompense Invoicing App changes
 {: .no_toc }

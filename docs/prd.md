@@ -1,6 +1,7 @@
 ---
 title: Product Requirements Document
-nav_order: 4
+parent: SimpliCompense — product documentation suite
+nav_order: 1
 ---
 
 # Product Requirements Document (PRD)
@@ -9,11 +10,18 @@ PRD to develop inventory management features for a fictitious invoicing software
 
 -----------------------------
 
+> **Context**
+> - **Audience:** Product managers, designers, and engineering leads.
+> - **My role:** Authored the PRD by scoping requirements, prioritization, and acceptance criteria.
+> - **Tools:** Markdown, requirements-table conventions (priority and acceptance criteria).
+> - **Outcome:** A single source of truth that engineering can turn directly into a sprint plan. See the [SimpliCompense suite overview](../product-writing/) for how it flows into the rest of the documents.
+{: .note }
+
 ## SimpliCompense’s Inventory Management product requirements document.
 
-| **Scope**               | Creation and management of inventories and purchase orders
+| **Scope**               | Creation and management of inventories and purchase orders.
 | **Target release date** | September 22, 2024                                                             |
-| **Epic**                | SCE-49 - Inventory and purchase order creation and management                |
+| **Epic**                | SCE-49 - Inventory and purchase order creation and management.                |
 | **Document status**     | In Progress                                                                    |
 | **Document owner**      | Michael Smith                                                                  |
 | **Designers**           | Lily Peng, Nicholas Petrowsky                                                  |
