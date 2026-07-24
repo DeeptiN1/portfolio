@@ -1,10 +1,10 @@
 ---
-title: Meeting Notes
+title: Meeting notes
 parent: SimpliCompense — product documentation suite
 nav_order: 3
 ---
 
-# Meeting Notes
+# Meeting notes
 {: .no_toc }
 Meeting notes for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense".
 

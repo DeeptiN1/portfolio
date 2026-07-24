@@ -1,10 +1,10 @@
 ---
-title: Product Requirements Document
+title: Product requirements document
 parent: SimpliCompense — product documentation suite
 nav_order: 1
 ---
 
-# Product Requirements Document (PRD)
+# Product requirements document (PRD)
 {: .no_toc }
 PRD to develop inventory management features for a fictitious invoicing software called "SimpliCompense".
 
@@ -17,7 +17,7 @@ PRD to develop inventory management features for a fictitious invoicing software
 > - **Outcome:** A single source of truth that engineering can turn directly into a sprint plan. See the [SimpliCompense suite overview](../product-writing/) for how it flows into the rest of the documents.
 {: .note }
 
-## SimpliCompense’s Inventory Management product requirements document.
+## SimpliCompense’s Inventory Management product requirements document
 
 | **Scope**               | Creation and management of inventories and purchase orders.
 | **Target release date** | September 22, 2024                                                             |

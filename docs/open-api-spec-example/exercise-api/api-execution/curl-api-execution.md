@@ -1,10 +1,10 @@
 ---
 title: cURL
-parent: API Execution
+parent: API execution
 nav_order: 3
 ---
 
-# API Execution using cURL
+# API execution using cURL
 
 ----------------------
 

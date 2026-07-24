@@ -1,6 +1,6 @@
 ---
 title: Java code sample
-parent: Code Samples
+parent: Code samples
 nav_order: 1
 ---
 

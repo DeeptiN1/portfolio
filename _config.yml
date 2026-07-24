@@ -50,6 +50,7 @@ exclude:
   - package-lock.json
   - Rakefile
   - README.md
+  - STYLE_GUIDE.md
   - CODE_OF_CONDUCT.md
   - CHANGELOG.md
   - MIGRATION.md

@@ -1,10 +1,10 @@
 ---
-title: API Documentation
+title: API documentation
 parent: Developer documentation
 nav_order: 2
 ---
 
-# API Documentation
+# API documentation
 {: .no_toc }
 Documentation of a free REST API for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
@@ -35,7 +35,7 @@ Follow these steps to retrieve a valid API key to execute the API:
 |:----------------------|:------------------------------------------|
 | x-rapidapi-key        | API key required for a successful request |
 
-## REST Endpoint
+## REST endpoint
 `GET /exercises/bodyPart/{bodyPart}`
 retrieves a list of exercises based on the specified body part.
 

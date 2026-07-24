@@ -17,7 +17,7 @@ Technical Writer, Experienced Software Engineer
 <div style="margin-right: 9rem;"><img src="{{ '/docs/images/deepti-photo.png' | relative_url }}" width="150" height="150" alt="Deepti Nalavade" style="border-radius: 50%; object-fit: cover; flex-shrink: 0;"></div>
 </div>
 
-## About Me
+## About me
 {: .fs-7 .fw-300 style="margin-top: -1rem;" }
 
 I'm a Senior Technical Writer with 15+ years of combined experience across software engineering and technical writing, including developer infrastructure, docs-as-code platforms, CI/CD publishing pipelines, and recently, AI-assisted documentation ecosystems.
@@ -50,7 +50,7 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 * I've authored 79+ Confluence pages (touching 110+ total) used across engineering, product, and DevOps teams.
   {: .fs-5 .fw-300 }
 
-## LinkedIn and Resume
+## LinkedIn and resume
 {: .fs-7 .fw-300 }
 
 * [Connect with me on LinkedIn](https://www.linkedin.com/in/deeptinalavade)
@@ -58,3 +58,14 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 
 * [View/Download my Resume]({{ '/assets/Deepti_Nalavade_Senior_Technical_Writer.pdf' | relative_url }})
   {: .fs-5 .fw-300 }
+
+## Portfolio contents
+{: .fs-7 .fw-300 }
+
+| Section | Pages |
+|:---|:---|
+| [About](/) | Overview |
+| [Developer documentation](docs/developer-documentation/) | [User Guide](docs/user-guide/) → [API Documentation](docs/api-documentation/) → [OpenAPI/Swagger integration](docs/open-api-spec-example/) (with child pages) |
+| [SimpliCompense product documentation suite](docs/product-writing/) | [PRD](docs/prd/), [Memo](docs/memo/), [Meeting Notes](docs/meeting-notes/), [Release Notes](docs/release-notes/), [FAQs](docs/faqs/) |
+| [Content and Strategy](docs/content-strategy/) | [User Persona](docs/user-persona/), [Information Architecture](docs/information-architecture/) |
+| [Open source](docs/open-source/) | [GitHub Contributions](docs/github-contributions/) |

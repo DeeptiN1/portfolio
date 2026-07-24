@@ -1,10 +1,10 @@
 ---
-title: Information Architecture
-parent: Content and Strategy
+title: Information architecture
+parent: Content and strategy
 nav_order: 2
 ---
 
-# Information Architecture
+# Information architecture
 {: .no_toc }
 Information architecture diagram for [City Lights Bookstore](https://citylights.com/).
 

@@ -1,6 +1,6 @@
 ---
 title: Node.js code sample
-parent: Code Samples
+parent: Code samples
 nav_order: 2
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Postman
-parent: API Execution
+parent: API execution
 nav_order: 2
 ---
 
-# API Execution using Postman
+# API execution using Postman
 
 ----------------------
 
