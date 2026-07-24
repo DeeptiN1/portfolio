@@ -1,6 +1,6 @@
 ---
 title: GET exercises by equipment type
-parent: Swagger (OpenAPI spec) Integration
+parent: Swagger (OpenAPI spec) integration
 nav_order: 1
 summary:
 swaggerfile: exercise_api
@@ -21,7 +21,7 @@ Automatically generated API documentation using OpenAPI specification and Swagge
 
 {% include swagger_parsers/getattribute.md attribute="description" %}
 
-## Authentication Header parameters
+## Authentication header parameters
 
 {% include swagger_parsers/getauthheaders.md paramtype="header" %}
 
@@ -37,6 +37,6 @@ Automatically generated API documentation using OpenAPI specification and Swagge
 
 {% include swagger_parsers/getresponses.md %}
 
-## Content types:
+## Content types
 
 {% include swagger_parsers/getattribute.md attribute="produces" type="list" %}

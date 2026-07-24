@@ -1,10 +1,10 @@
 ---
-title: Release Notes
+title: Release notes
 parent: SimpliCompense — product documentation suite
 nav_order: 4
 ---
 
-# Release Notes
+# Release notes
 Release notes for a fictitious invoicing software called "SimpliCompense".
 
 -------------------------
@@ -16,13 +16,13 @@ Release notes for a fictitious invoicing software called "SimpliCompense".
 > - **Outcome:** A scannable summary of what changed in version 4.1, including deprecations that affect existing user workflows.
 {: .note }
 
-## SimpliCompense Invoicing App changes
+## SimpliCompense invoicing app changes
 {: .no_toc }
 
 April 15, 2024 \
 Latest Stable Version: 4.1
 
-### New Features
+### New features
 * **Additional payment options.** \
     * In addition to Stripe, SimpliCompense now supports integration with SecurePay and PayPal.
 * **Invoice report customization.** \
@@ -33,7 +33,7 @@ Latest Stable Version: 4.1
 * **Quote to Invoice conversion.** \
     * Import quotes to generate invoices at the click of a button.
 
-### Bug Fixes + Improvements
+### Bug fixes and improvements
 * Improved error handling on removal of scheduled invoices.
 * Fixed standard message formatting on invoice templates.
 * Corrected timestamp on CSV files for exported invoices.

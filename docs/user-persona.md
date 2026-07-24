@@ -1,10 +1,10 @@
 ---
-title: User Persona
-parent: Content and Strategy
+title: User persona
+parent: Content and strategy
 nav_order: 1
 ---
 
-# User Persona and Audience Learning Curve
+# User persona and audience learning curve
 {: .no_toc }
 An exercise for creating a sample user persona and plotting an audience learning curve for the user.
 
@@ -24,7 +24,7 @@ Location: San Francisco, CA
 ### About
 This user persona, Rob, is a representative of the target audience for consuming the services offered by a fictional API analytics software product. He works as a senior software engineer who codes back end programs at a user-facing, consumer software company that helps users with housing services. He needs to utilize third-party software services like the fictional API analytics product to view API metrics and generate reports on the APIs he has developed. The fictional API analytics product provides its own APIs to be integrated with their customers’ systems.
 
-### Goals and Needs
+### Goals and needs
 * To be able to find how to start using the services in the form of APIs from the analytics product.
 * To be able to find a list of APIs and their functions offered by the analytics product.
 * To know the versions and specifications of each API, their parameters, responses, error codes, and error messages.
@@ -45,17 +45,17 @@ This user persona, Rob, is a representative of the target audience for consuming
 * Viewing discrepancies in the documented APIs and actual functioning of the APIs.
 * Not being given enough troubleshooting related knowledge.
 
-### Everyday Activities
+### Everyday activities
 * Working in an Agile environment with product managers and design/UX experts and frontend engineers.
 * Writing back end software code involving APIs.
 * Writing tests for the code.
 * Troubleshooting errors.
 * Analyzing system performance.
 
-### Device Usage
+### Device usage
 * Laptop
 * Mobile phone
 
-## Audience Learning Curve
+## Audience learning curve
 
 ![Audience Learning Curve](../images/audience-learning-curve.png)

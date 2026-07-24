@@ -1,10 +1,10 @@
 ---
-title: API Key
-parent: API Execution
+title: API key
+parent: API execution
 nav_order: 1
 ---
 
-# API Key
+# API key
 
 Retrieving a valid API key.
 

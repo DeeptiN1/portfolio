@@ -1,10 +1,10 @@
 ---
-title: User Guide
+title: User guide
 parent: Developer documentation
 nav_order: 1
 ---
 
-# User Guide
+# User guide
 {: .no_toc }
 User guide for free REST APIs for exercises from [ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb).
 
@@ -35,7 +35,7 @@ GET API requests are executed on the “exercises” resource.
 Refer to [Authentication and Authorization]({% link docs/api-documentation.md %}#authentication-and-authorization) to get an API key.
 
 ## How to execute ExerciseDB APIs?
-ExerciseDB APIs can be executed by using cURL or Postman.
+You can execute ExerciseDB APIs using cURL or Postman.
 
 ### Executing ExerciseDB APIs using cURL
 
