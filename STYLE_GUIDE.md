@@ -4,7 +4,7 @@ This portfolio follows the [Google developer documentation style guide](https://
 
 ## Voice and tone
 
-* Write in second person ("you") for instructional and procedural content like guides, how-tos, and FAQs. Third person is appropriate for descriptive business documents (the PRD, memo, and meeting notes in the [SimpliCompense suite](docs/product-writing/index.md)), where it matches the genre's real-world convention.
+* Write in second person ("you") for instructional and procedural content, like guides, how-tos, and FAQs. Third person is appropriate for descriptive business documents (the PRD, memo, and meeting notes in the [SimpliCompense suite](docs/product-writing/index.md)), where it matches the genre's real-world convention.
 * Prefer active voice and present tense. Example: "You can execute ExerciseDB APIs using cURL or Postman," not "ExerciseDB APIs can be executed by using cURL or Postman."
 * Use contractions ("I'm," "you'll"). Google style treats them as more conversational, not less professional.
 * Avoid condescending words: "simply," "just," "easily," "obviously." If a step needs one of these to sound easy, the step needs rewriting instead.

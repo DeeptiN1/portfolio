@@ -10,6 +10,12 @@ nav_order: 3
 Five samples written for a fictional product called SimpliCompense, across different audiences and stages of its lifecycle.
 {: .fs-5 .fw-300 }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## The scenario
 
 SimpliCompense is a fictional invoicing product with about 8,000 active small-business users. To capture holiday-season demand, product leadership pulled forward the launch date for a new Inventory Management feature to September 22.
@@ -42,5 +48,5 @@ The memo and meeting notes both point straight back to the PRD.
 
 * **Consistent terminology.** "SimpliCompense," "Inventory Management," and the priority labels Must-have/Nice-to-have are used identically in every document, without any synonyms introduced along the way.
 * **A traceable requirement ID.** The PRD's epic (SCE-49) gives engineering a single reference point that the meeting notes' "create Jira tickets for the finalized stories" can refer to.
-* **Acceptance criteria as a first-class column**, It is carried from the PRD's requirements table into the meeting notes' action items.
+* **Acceptance criteria as a first-class column.** It is carried from the PRD's requirements table into the meeting notes' action items.
 * **Audience-appropriate structure.** The PRD and release notes both use tables/headers for scanability, the FAQs use a question-per-heading format so each answer is independently searchable, and the memo and meeting notes follow standard business-memo and minutes conventions (To/From/Date/Subject; Topic/Date/Attendees/Action items).

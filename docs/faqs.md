@@ -1,6 +1,6 @@
 ---
 title: FAQs
-parent: SimpliCompense — product documentation suite
+parent: SimpliCompense product documentation suite
 nav_order: 5
 ---
 
@@ -16,6 +16,12 @@ Answers to common questions about using "SimpliCompense", a fictitious invoicing
 > - **Tools:** Markdown, question-per-heading format for searchability.
 > - **Outcome:** Self-service answers to the most common invoicing questions, reducing support-ticket volume for known workflows.
 {: .note }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## How do I start using SimpliCompense for invoicing?
 To start using SimpliCompense for creating invoices, follow these steps:

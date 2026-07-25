@@ -17,6 +17,12 @@ Technical Writer, Experienced Software Engineer
 <div style="margin-right: 9rem;"><img src="{{ '/docs/images/deepti-photo.png' | relative_url }}" width="150" height="150" alt="Deepti Nalavade" style="border-radius: 50%; object-fit: cover; flex-shrink: 0;"></div>
 </div>
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## About me
 {: .fs-7 .fw-300 style="margin-top: -1rem;" }
 

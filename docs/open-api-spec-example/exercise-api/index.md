@@ -1,7 +1,7 @@
 ---
 title: GET exercises by equipment type
 parent: Swagger (OpenAPI spec) integration
-nav_order: 1
+nav_order: 2
 summary:
 swaggerfile: exercise_api
 swaggerkey: /exercises/equipment/{type}
@@ -12,6 +12,12 @@ method: get
 Automatically generated API documentation using OpenAPI specification and Swagger parsers.
 
 ----------------------
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Summary
 
