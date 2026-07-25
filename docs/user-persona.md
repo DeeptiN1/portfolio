@@ -10,6 +10,12 @@ An exercise for creating a sample user persona and plotting an audience learning
 
 ---------------------------------------------------
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## "The seasoned software developer"
 
 This is a user who is a software engineer looking to integrate a fictional API analytics software product into their own system.

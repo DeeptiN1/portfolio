@@ -17,6 +17,12 @@ Documentation of a free REST API for exercises from [ExerciseDB](https://rapidap
 > - **Outcome:** A self-service reference a developer can use to authenticate and make a successful call without outside help.
 {: .note }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## Body part ExerciseDB API
 `/exercises/bodyPart/{bodyPart}` provides information about exercises for the specified body part.
 
@@ -201,3 +207,44 @@ The response of the body part exercise API is an array of exercise objects in JS
 | 403 Forbidden    | API key does not have permission to perform the request. |
 | 404 Not Found    | Requested resource does not exist.                       |
 | 500 Server Error | Server-side error.                                       |
+
+## Error responses
+
+Error responses return a JSON body with a `message` field. The `401` and `403` bodies below are captured directly from the live API. The `404` body is representative, since triggering it requires a resource that doesn't exist on a specific exercise ID rather than a bad request shape.
+
+**401 Unauthorized** — missing or invalid API key:
+```json
+{
+  "message": "Invalid API key. Go to https://docs.rapidapi.com/docs/keys for more info."
+}
+```
+
+**403 Forbidden** — API key not subscribed to this API:
+```json
+{
+  "message": "You are not subscribed to this API."
+}
+```
+
+**404 Not Found** — requested resource does not exist (representative example):
+```json
+{
+  "message": "Resource not found."
+}
+```
+
+## Rate limits
+
+RapidAPI enforces rate limits per subscription plan. Exceeding your plan's quota returns a `429` status with this body (captured from the live API):
+```json
+{
+  "message": "Too many requests"
+}
+```
+
+Check your current plan's quota on the [ExerciseDB pricing tab on RapidAPI](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/pricing). Limits vary by plan and change over time, so this reference doesn't hardcode a specific number.
+
+## See also
+
+[GET /exercises/equipment/{type}]({% link docs/open-api-spec-example/exercise-api/index.md %}), a second ExerciseDB endpoint, documented automatically from an OpenAPI spec rather than by hand.
+

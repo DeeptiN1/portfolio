@@ -1,6 +1,6 @@
 ---
 title: Memo
-parent: SimpliCompense — product documentation suite
+parent: SimpliCompense product documentation suite
 nav_order: 2
 ---
 

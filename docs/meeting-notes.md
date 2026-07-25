@@ -1,6 +1,6 @@
 ---
 title: Meeting notes
-parent: SimpliCompense — product documentation suite
+parent: SimpliCompense product documentation suite
 nav_order: 3
 ---
 
@@ -36,7 +36,7 @@ SimpliCompense’s Inventory Management product must provide the following capab
   * Purchase order creation and management.
   * Purchase order searching, scheduling and tracking.
   * Sync orders with invoices.
-  * Reporting capabilities to show number of orders, sales, costs and profits.
+  * Reporting capabilities to show the number of orders, sales, costs and profits.
 * Nice-to-have features
   * Handling of shipping, including creating shipping labels and returns.
   * Management of multiple sales channels.

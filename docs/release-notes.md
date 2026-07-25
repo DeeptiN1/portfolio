@@ -1,6 +1,6 @@
 ---
 title: Release notes
-parent: SimpliCompense — product documentation suite
+parent: SimpliCompense product documentation suite
 nav_order: 4
 ---
 
