@@ -1,0 +1,20 @@
+name: Vale prose lint
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  vale:
+    name: Vale (Google style)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Run Vale
+        uses: vale-cli/vale-action@v2
+        with:
+          files: '["docs", "index.md"]'
+          reporter: github-pr-check
+          level: warning
+          fail_on_error: true

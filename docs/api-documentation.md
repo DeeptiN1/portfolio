@@ -186,10 +186,10 @@ The response of the body part exercise API is an array of exercise objects in JS
 | id                  | Unique database identifier of the exercise.    | String | "1314"                                                                                                                                                                                                                                                                                               |
 | name                | Name of the exercise.                          | String | “back extension on exercise ball”                                                                                                                                                                                                                                                                    |
 | target              | Targeted body part for exercise.               | String | “spine”                                                                                                                                                                                                                                                                                              |
-| instructions        | Exercise steps.                                | Array  | ["Place the stability ball on the ground and lie face down on top of it, hips resting on the ball and feet against a wall or other stable surface.", "Position hands behind your head or crossed over your chest."]                                                                                  |
+| instructions        | Exercise steps.                                | Array  | `["Place the stability ball on the ground and lie face down on top of it, hips resting on the ball and feet against a wall or other stable surface.", "Position hands behind your head or crossed over your chest."]` |
 | equipment           | Exercise equipment.                            | String | “stability ball”                                                                                                                                                                                                                                                                                     |
 | gifUrl              | GIF-formatted image URL of the exercise.       | String | “https://v2.exercisedb.io/image/tDLUVhupOY5SO8”                                                                                                                                                                                                                                                      |
-| secondaryMuscles    | List of muscles the exercise focuses on.       | Array  | [ "glutes","hamstrings"]                                                                                                                                                                                                                                                                             |
+| secondaryMuscles    | List of muscles the exercise focuses on.       | Array  | `["glutes", "hamstrings"]` |
 
 ## Response codes
 * Success response code
@@ -212,21 +212,21 @@ The response of the body part exercise API is an array of exercise objects in JS
 
 Error responses return a JSON body with a `message` field. The `401` and `403` bodies below are captured directly from the live API. The `404` body is representative, since triggering it requires a resource that doesn't exist on a specific exercise ID rather than a bad request shape.
 
-**401 Unauthorized** — missing or invalid API key:
+**401 Unauthorized**—missing or invalid API key:
 ```json
 {
   "message": "Invalid API key. Go to https://docs.rapidapi.com/docs/keys for more info."
 }
 ```
 
-**403 Forbidden** — API key not subscribed to this API:
+**403 Forbidden**—API key not subscribed to this API:
 ```json
 {
   "message": "You are not subscribed to this API."
 }
 ```
 
-**404 Not Found** — requested resource does not exist (representative example):
+**404 Not Found**—requested resource does not exist (representative example):
 ```json
 {
   "message": "Resource not found."

@@ -5,7 +5,7 @@ nav_order: 4
 ---
 
 # Release notes
-Release notes for a fictitious invoicing software called "SimpliCompense".
+Release notes for a fictitious invoicing software called "SimpliCompense."
 
 -------------------------
 

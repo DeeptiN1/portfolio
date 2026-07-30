@@ -6,7 +6,7 @@ nav_order: 5
 
 # FAQs
 {: .no_toc }
-Answers to common questions about using "SimpliCompense", a fictitious invoicing software for creating and managing invoices.
+Answers to common questions about using "SimpliCompense," a fictitious invoicing software for creating and managing invoices.
 
 ------------------
 

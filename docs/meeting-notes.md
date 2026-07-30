@@ -6,7 +6,7 @@ nav_order: 3
 
 # Meeting notes
 {: .no_toc }
-Meeting notes for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense".
+Meeting notes for an imaginary meeting between engineering team members working at a company that has developed for a fictitious invoicing software called "SimpliCompense."
 
 ------------------------------------
 
@@ -21,7 +21,7 @@ Meeting notes for an imaginary meeting between engineering team members working 
 
 **Date**: May 13, 2024
 
-**Time**: 2.00 p.m.
+**Time**: 2:00 PM
 
 **Attendees**: Nathan Smith, Carla Gonzales, Raj Mohan, Sun Li, Natasha Kumar, Peter Caine, Fernando Martinez, Nadira Ali, Rihanna Miller.
 

@@ -6,7 +6,7 @@ nav_order: 2
 
 # Memo
 {: .no_toc }
-Memo for all engineering managers working in a company that has developed a fictitious invoicing software called "SimpliCompense".
+Memo for all engineering managers working in a company that has developed a fictitious invoicing software called "SimpliCompense."
 
 -------------------------
 

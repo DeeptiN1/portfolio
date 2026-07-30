@@ -15,6 +15,7 @@
     "lint": "npm-run-all --parallel --continue-on-error lint:*",
     "lint:css": "stylelint '**/*.scss'",
     "lint:formatting": "prettier --check '**/*.{scss,js,json}'",
+    "lint:prose": "vale docs index.md",
     "format": "prettier --write '**/*.{scss,js,json}'",
     "test": "npm run lint"
   },
