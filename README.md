@@ -15,3 +15,14 @@ bundle exec jekyll serve --baseurl ""
 ```
 
 Site will be available at `http://127.0.0.1:4000/`.
+
+## Linting
+
+[Vale](https://vale.sh/), configured with the [Google style rules](https://github.com/errata-ai/Google) vendored under `.github/styles/Google/`, checks `docs/` and `index.md` for style-guide violations. It runs automatically on every pull request; to run it locally:
+
+```
+vale docs index.md
+# or: npm run vale
+```
+
+(Requires the Vale CLI — `brew install vale` on macOS.)

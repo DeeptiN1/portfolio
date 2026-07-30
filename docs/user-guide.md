@@ -75,5 +75,5 @@ Set the header key “x-rapidapi-key” with the API key value.
 
 This guide covers getting started. For the complete reference, refer to the following pages:
 
-* [API documentation]({% link docs/api-documentation.md %}) — the hand-written reference for `GET /exercises/bodyPart/{bodyPart}`, including error responses and rate limits.
-* [GET /exercises/equipment/{type}]({% link docs/open-api-spec-example/exercise-api/index.md %}) — a second endpoint, documented automatically from an OpenAPI spec rather than by hand. See [how that pipeline works]({% link docs/open-api-spec-example/pipeline.md %}).
+* [API documentation]({% link docs/api-documentation.md %})—the hand-written reference for `GET /exercises/bodyPart/{bodyPart}`, including error responses and rate limits.
+* [GET /exercises/equipment/{type}]({% link docs/open-api-spec-example/exercise-api/index.md %})—a second endpoint, documented automatically from an OpenAPI spec rather than by hand. See [how that pipeline works]({% link docs/open-api-spec-example/pipeline.md %}).

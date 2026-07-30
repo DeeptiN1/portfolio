@@ -1,20 +1,20 @@
 ---
-title: Open-source contributions
+title: Open source contributions
 parent: Open source
 nav_order: 1
 ---
 
-# Open-source GitHub contributions
+# Open source GitHub contributions
 {: .no_toc }
-Documentation-related contributions to open-source GitHub projects.
+Documentation-related contributions to open source GitHub projects.
 
 --------------------------------
 
 > **Context**
-> - **Audience:** Maintainers and users of the open-source projects I contributed to.
+> - **Audience:** Maintainers and users of the open source projects I contributed to.
 > - **My role:** External contributor who proposed and authored each change via pull request, following each project's existing style guide and review process.
 > - **Tools:** Markdown, AsciiDoc, GitHub.
-> - **Outcome:** One merged PR, one PR approved by two maintainers but closed as stale before landing, and one adopted style guide — spanning infrastructure config documentation, metadata clarity, and style consistency.
+> - **Outcome:** One merged PR, one PR approved by two maintainers but closed as stale before landing, and one adopted style guide—spanning infrastructure config documentation, metadata clarity, and style consistency.
 {: .note }
 
 ## Table of contents
@@ -31,7 +31,7 @@ Documentation-related contributions to open-source GitHub projects.
 **My contribution:** I drafted the missing limit into the ["Add a file to an instance"](https://docs.nginx.com/nginx-one/how-to/nginx-configs/add-file/) page, and flagged for the reviewing team that the issue's originally proposed location (a different page) wasn't the best fit along with reasoning for why this page was.
 
 **Impact:** Two NGINX maintainers (`y82`, `ADubhlaoich`) approved the change. It also surfaced a documentation-architecture question of whether the note belonged inline or as a reusable include, which the team flagged for follow-up:
-> "I recommend adding the note in-line and not as an include. Includes are for reusable content, and this note is used only once." — Travis Martin, NGINX documentation maintainer.
+> "I recommend adding the note in-line and not as an include. Includes are for reusable content, and this note is used only once."—Travis Martin, NGINX documentation maintainer.
 
 The PR was ultimately **closed as stale rather than merged**, after CLA and internal SME sign-off took longer than the review window. The reviewer engagement and design feedback are the real signal here.
 
@@ -40,14 +40,14 @@ The PR was ultimately **closed as stale rather than merged**, after CLA and inte
 ![NGINX config file size limit GitHub PR](../images/nginx_documentation_pr.png)
 
 ## Open Sustainable Technology: Grist spreadsheet metadata definitions
-*Open Sustainable Technology is a directory and analysis of the open source ecosystem in areas of climate change, sustainable energy, biodiversity and natural resources.*
+*Open Sustainable Technology is a directory and analysis of the open source ecosystem in areas of climate change, sustainable energy, biodiversity, and natural resources.*
 
 **Problem:** Open Sustainable Technology publishes organization and funding data through a public Grist spreadsheet, but the column names weren't self-explanatory. Users couldn't tell what a value's source or calculation meant.
 
 **My contribution:** I authored a 68-line Markdown reference documenting every column's definition, and flagged two ambiguous column names (`organization_projects`, `website`) that didn't reflect what they actually contained.
 
 **Impact:** Merged. The maintainer adopted both renaming suggestions as a follow-up improvement:
-> "You made a fantastic contribution that is very helpful... This makes things much clearer." — Tobias Augspurger (`Ly0n`), Open Sustainable Technology maintainer.
+> "You made a fantastic contribution that is very helpful... This makes things much clearer."—Tobias Augspurger (`Ly0n`), Open Sustainable Technology maintainer.
 
 [View the merged pull request](https://github.com/protontypes/open-sustainable-technology/pull/1025)
 

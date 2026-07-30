@@ -26,6 +26,19 @@ This portfolio follows the [Google developer documentation style guide](https://
 * Use numerals for numbers in technical content, including statistics and counts (for example, "1,300 exercises," "8,000 users").
 * Use the serial (Oxford) comma in lists of three or more items.
 
+## Automated enforcement
+
+[Vale](https://vale.sh/), running the official [Google style package](https://github.com/errata-ai/Google) (vendored under `.github/styles/Google/`, not fetched at lint time, so CI doesn't depend on a third-party package registry being up), checks `docs/` and `index.md` on every pull request. Run it locally with `vale docs index.md`.
+
+A few of the package's default rules are turned off in `.vale.ini` because they don't fit this content:
+
+* **`Google.FirstPerson` / `Google.We`** — off. Vanilla Google style assumes third-person reference docs; this portfolio's About Me, Context callouts, and contribution write-ups are deliberately first person.
+* **`Google.Will`** — off. The memo and meeting notes reference genuine scheduled future events (a launch date, a meeting), where future tense is correct, not a style violation.
+* **`Google.Colons`** — off. "**Bold label:** value" is a deliberate convention here (memo header fields, persona attributes, Context callouts), not the sentence-continuation colon the rule expects.
+* **`Google.Ellipses`** — off. One quoted maintainer comment uses a genuine mid-quote ellipsis to mark an omission.
+
+`Google.Headings`' capitalization check also has an extended `exceptions:` list (in `.github/styles/Google/Headings.yml`) covering this portfolio's proper nouns and acronyms — `SimpliCompense`, `ExerciseDB`, `PRD`, `FAQs`, `cURL`, and so on — so it doesn't flag them as title-case violations.
+
 ## Applying this to writing samples
 
 The SimpliCompense documents (PRD, memo, meeting notes, release notes, FAQs) are fictional writing samples written in specific real-world genres. Style fixes there are limited to mechanical issues (heading case, punctuation, symbols) and not to rewriting their voice, since a memo and an FAQ are supposed to sound different from each other, and both are supposed to sound like real workplace documents rather than a style guide.
