@@ -28,7 +28,7 @@ Documentation-related contributions to open source GitHub projects.
 
 **Problem:** [Issue #63](https://github.com/nginx/documentation/issues/63) on the NGINX documentation repo flagged that the docs never stated the file size limit for config files added to an NGINX One instance. Users had to discover the constraint by trial and error.
 
-**My contribution:** I drafted the missing limit into the ["Add a file to an instance"](https://docs.nginx.com/nginx-one/how-to/nginx-configs/add-file/) page, and flagged for the reviewing team that the issue's originally proposed location (a different page) wasn't the best fit along with reasoning for why this page was.
+**My contribution:** I drafted the missing limit into the ["Add a file to an instance"](https://docs.nginx.com/nginx-one-console/nginx-configs/one-instance/add-file/) page, and flagged for the reviewing team that the issue's originally proposed location (a different page) wasn't the best fit along with reasoning for why this page was.
 
 **Impact:** Two NGINX maintainers (`y82`, `ADubhlaoich`) approved the change. It also surfaced a documentation-architecture question of whether the note belonged inline or as a reusable include, which the team flagged for follow-up:
 > "I recommend adding the note in-line and not as an include. Includes are for reusable content, and this note is used only once."—Travis Martin, NGINX documentation maintainer.
