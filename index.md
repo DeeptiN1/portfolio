@@ -70,7 +70,7 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 
 | Section | Pages |
 |:---|:---|
-| [About](/) | Overview |
+| [About]({{ '/' | relative_url }}) | Overview |
 | [Developer documentation](docs/developer-documentation/) | [User Guide](docs/user-guide/) → [API Documentation](docs/api-documentation/) → [OpenAPI/Swagger integration](docs/open-api-spec-example/) (with child pages) |
 | [SimpliCompense product documentation suite](docs/product-writing/) | [PRD](docs/prd/), [Memo](docs/memo/), [Meeting Notes](docs/meeting-notes/), [Release Notes](docs/release-notes/), [FAQs](docs/faqs/) |
 | [Content and Strategy](docs/content-strategy/) | [User Persona](docs/user-persona/), [Information Architecture](docs/information-architecture/) |
