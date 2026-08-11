@@ -73,6 +73,25 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Build Site
+        run: bundle exec jekyll build --baseurl ""
+      - name: Test with Nu Validator
+        uses: Cyb3r-Jak3/html5validator-action@443b108eb8e134b63a1f8a8ba0c942d552608ed7
+        with:
+          config: fixtures/html5validator-config.yml
+
+  check-links:
+    name: Check links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Cache HTMLProofer
         id: cache-htmlproofer
         uses: actions/cache@v6
@@ -81,10 +100,6 @@ jobs:
           key: ${{ runner.os }}-htmlproofer
       - name: Build Site
         run: bundle exec jekyll build --baseurl ""
-      - name: Test with Nu Validator
-        uses: Cyb3r-Jak3/html5validator-action@443b108eb8e134b63a1f8a8ba0c942d552608ed7
-        with:
-          config: fixtures/html5validator-config.yml
       - name: Test with html-proofer
         run: bundle exec htmlproofer _site --disable-external
         env:
