@@ -39,7 +39,7 @@ vale docs index.md
 
 ### Why external checks don't run on every PR
 
-Checking external links on every PR would make ordinary PRs fail for reasons that have nothing to do with the change being reviewed: a handful of external sites return bot-challenge responses (not real errors) to the kind of non-browser HTTP client `html-proofer` uses, so they'd fail every time regardless of what changed. Running that check weekly instead—separate from PR review—means a real failure is worth looking at, rather than something to routinely dismiss.
+Checking external links on every PR would make ordinary PRs fail for reasons that have nothing to do with the change being reviewed: a handful of external sites return bot-challenge responses (not real errors) to the kind of non-browser HTTP client `html-proofer` uses, so they'd fail every time regardless of what changed. Running that check weekly instead, separate from PR review, means a real failure is worth looking at, rather than something to routinely dismiss.
 
 ### Ignored domains
 
@@ -47,9 +47,9 @@ The external-link check ignores these domains, each confirmed to work fine in a 
 
 * **`linkedin.com`**—returns HTTP `999`, a status code LinkedIn specifically uses to block scraping/bot traffic.
 * **`citylights.com`**—its Sucuri WAF (a bot-protection service) returns an HTTP `307` challenge redirect to non-browser clients.
-* **`deeptin1.github.io`** (the site's own domain)—the build used for link checking sets `--baseurl ""` so internal script/asset references match the local file layout, which makes the site's own self-referential absolute URLs (canonical tags, structured data) miss the real `/portfolio/` prefix and 404 against the live site. That's a local-build artifact, not a real content link.
+* **`deeptin1.github.io`** (the site's own domain)—the build used for link checking sets `--baseurl ""` so internal script/asset references match the local file layout, which makes the site's own self-referential absolute URLs (canonical tags, structured data) miss the real `/portfolio/` prefix and 404 against the live site.
 
-With `--ignore-urls`, `html-proofer` never sends a request to these domains at all—they're filtered out before any network call happens, not checked-and-suppressed. If a link on one of these domains actually breaks for real, this check won't catch it; that blind spot is accepted in exchange for the check not crying wolf every week.
+With `--ignore-urls`, `html-proofer` never sends a request to these domains at all. They're filtered out before any network call happens, not checked-and-suppressed. If a link on one of these domains actually breaks for real, this check won't catch it. This blind spot is accepted in exchange for the check not crying wolf every week.
 
 ### Running it manually
 
@@ -62,7 +62,7 @@ With `--ignore-urls`, `html-proofer` never sends a request to these domains at a
    gh workflow run check-links.yml --repo DeeptiN1/portfolio
    ```
 
-A manual run behaves like the weekly one—it checks external links too, not just internal.
+A manual run behaves like the weekly one checking external links, not just internal ones.
 
 ### Viewing output from the scheduled run
 
