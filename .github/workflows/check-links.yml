@@ -1,0 +1,65 @@
+name: Check links
+
+# Runs independently of ci.yml so link checking doesn't depend on a PR being
+# open: links (especially external ones) can rot on their own, with no
+# change to this repo at all.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 13 * * 1" # every Monday at 13:00 UTC
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    name: Check links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Cache HTMLProofer
+        id: cache-htmlproofer
+        uses: actions/cache@v6
+        with:
+          path: tmp/.htmlproofer
+          key: ${{ runner.os }}-htmlproofer
+      - name: Build Site
+        run: bundle exec jekyll build --baseurl ""
+      - name: Test with html-proofer (internal links)
+        run: bundle exec htmlproofer _site --disable-external
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+      - name: Test with html-proofer (internal + external links)
+        # Only on the scheduled/manual run, not on every PR/push: this is
+        # the only way to catch real external link rot, like the NGINX
+        # docs restructuring that broke a link in
+        # docs/github-contributions.md with no change to this repo at all.
+        #
+        # linkedin.com and citylights.com are ignored: both return
+        # bot-challenge status codes (999 and a Sucuri WAF 307) to
+        # non-browser clients, confirmed working fine in a real browser.
+        #
+        # deeptin1.github.io is ignored too: this build uses --baseurl ""
+        # (so internal script/asset references match the local file
+        # layout), which makes the site's own self-referential absolute
+        # URLs (canonical tags, structured data) miss the real /portfolio/
+        # prefix and 404 against the live site. That's a local-build
+        # artifact, not a real content link.
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: >
+          bundle exec htmlproofer _site
+          --typhoeus '{"connecttimeout": 10, "timeout": 20}'
+          --ignore-urls "/linkedin\.com/,/citylights\.com/,/deeptin1\.github\.io/"
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
