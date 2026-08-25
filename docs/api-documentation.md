@@ -69,6 +69,9 @@ curl --request GET --url 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/b
 ```
 
 ## Sample response
+
+The preceding request (`limit=5`) returns an array of 5 exercise objects. One representative object is shown below while the rest follow the same schema.
+
 ```json
 [
   {
@@ -91,88 +94,6 @@ curl --request GET --url 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/b
       "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
       "Repeat for the desired number of repetitions."
     ]
-  },
-  {
-    "bodyPart": "back",
-    "equipment": "leverage machine",
-    "gifUrl": "https://v2.exercisedb.io/image/jPrVqKIwBKzg2y",
-    "id": "0017",
-    "name": "assisted pull-up",
-    "target": "lats",
-    "secondaryMuscles": [
-      "biceps",
-      "forearms"
-    ],
-    "instructions": [
-      "Adjust the machine to your desired weight and height settings.",
-      "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
-      "Hang with your arms fully extended and your feet off the ground.",
-      "Engage your back muscles and pull your body up towards the handles, keeping your elbows close to your body.",
-      "Continue pulling until your chin is above the handles.",
-      "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "back",
-    "equipment": "leverage machine",
-    "gifUrl": "https://v2.exercisedb.io/image/oFMmM2Lt5zAGxc",
-    "id": "1431",
-    "name": "assisted standing chin-up",
-    "target": "lats",
-    "secondaryMuscles": [
-      "biceps",
-      "forearms"
-    ],
-    "instructions": [
-      "Adjust the machine to your desired assistance level.",
-      "Stand on the foot platform and grip the handles with an overhand grip, slightly wider than shoulder-width apart.",
-      "Keep your chest up and shoulders back, engage your core, and slightly bend your knees.",
-      "Pull your body up by flexing your elbows and driving your elbows down towards your sides.",
-      "Continue pulling until your chin is above the bar.",
-      "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "back",
-    "equipment": "leverage machine",
-    "gifUrl": "https://v2.exercisedb.io/image/YPPyG7BunfLsje",
-    "id": "1432",
-    "name": "assisted standing pull-up",
-    "target": "lats",
-    "secondaryMuscles": [
-      "biceps",
-      "forearms"
-    ],
-    "instructions": [
-      "Adjust the machine to your desired weight and height settings.",
-      "Stand facing the machine with your feet shoulder-width apart.",
-      "Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.",
-      "Engage your lats and biceps, and pull yourself up towards the handles.",
-      "Pause for a moment at the top, squeezing your back muscles.",
-      "Slowly lower yourself back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
-  },
-  {
-    "bodyPart": "back",
-    "equipment": "stability ball",
-    "gifUrl": "https://v2.exercisedb.io/image/tDLUVhupOY5SO8",
-    "id": "1314",
-    "name": "back extension on exercise ball",
-    "target": "spine",
-    "secondaryMuscles": [
-      "glutes",
-      "hamstrings"
-    ],
-    "instructions": [
-      "Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall or other stable surface.",
-      "Position your hands behind your head or crossed over your chest.",
-      "Engage your core and slowly lift your upper body off the ball, extending your back until your body forms a straight line from your head to your heels.",
-      "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
-      "Repeat for the desired number of repetitions."
-    ]
   }
 ]
 ```
@@ -180,16 +101,16 @@ curl --request GET --url 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/b
 ## Response schema definitions
 The response of the body part exercise API is an array of exercise objects in JSON format.
 
-| Exercise object key | Description                                    | Type   | Sample Value                                                                                                                                                                                                                                                                                         |
-|:--------------------|:-----------------------------------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| bodyPart            | The body part for which to fetch the exercise. | String | “back”                                                                                                                                                                                                                                                                                               |
-| id                  | Unique database identifier of the exercise.    | String | "1314"                                                                                                                                                                                                                                                                                               |
-| name                | Name of the exercise.                          | String | “back extension on exercise ball”                                                                                                                                                                                                                                                                    |
-| target              | Targeted body part for exercise.               | String | “spine”                                                                                                                                                                                                                                                                                              |
-| instructions        | Exercise steps.                                | Array  | `["Place the stability ball on the ground and lie face down on top of it, hips resting on the ball and feet against a wall or other stable surface.", "Position hands behind your head or crossed over your chest."]` |
-| equipment           | Exercise equipment.                            | String | “stability ball”                                                                                                                                                                                                                                                                                     |
-| gifUrl              | GIF-formatted image URL of the exercise.       | String | “https://v2.exercisedb.io/image/tDLUVhupOY5SO8”                                                                                                                                                                                                                                                      |
-| secondaryMuscles    | List of muscles the exercise focuses on.       | Array  | `["glutes", "hamstrings"]` |
+| Exercise object key | Description                                    | Type   | Sample Value                                     |
+|:--------------------|:-----------------------------------------------|:-------|:--------------------------------------------------|
+| bodyPart            | The body part for which to fetch the exercise. | String | "back"                                            |
+| id                  | Unique database identifier of the exercise.    | String | "0015"                                            |
+| name                | Name of the exercise.                          | String | "assisted parallel close grip pull-up"            |
+| target              | Targeted body part for exercise.               | String | "lats"                                            |
+| instructions        | Exercise steps. See [Sample response](#sample-response) for the full array. | Array | `["Adjust the machine to your desired weight and height.", ...]` |
+| equipment           | Exercise equipment.                            | String | "leverage machine"                                |
+| gifUrl              | GIF-formatted image URL of the exercise.       | String | "https://v2.exercisedb.io/image/1SHadaWOnoKwY1"   |
+| secondaryMuscles    | List of muscles the exercise focuses on.       | Array  | `["biceps", "forearms"]`                          |
 
 ## Response codes
 * Success response code
@@ -247,4 +168,5 @@ Check your current plan's quota on the [ExerciseDB pricing tab on RapidAPI](http
 ## See also
 
 [GET /exercises/equipment/{type}]({% link docs/open-api-spec-example/exercise-api/index.md %}), a second ExerciseDB endpoint, documented automatically from an OpenAPI spec rather than by hand.
+
 
