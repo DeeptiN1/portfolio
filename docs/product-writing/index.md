@@ -1,7 +1,7 @@
 ---
 title: SimpliCompense product documentation suite
 has_children: true
-nav_order: 3
+nav_order: 4
 ---
 
 # SimpliCompense product documentation suite
