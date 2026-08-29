@@ -50,7 +50,7 @@ Failing: no `llms.txt` existed at all (which cascaded into 5 dependent checks fa
 
 ### A discovery index: `llms.txt`
 
-Added [`llms.txt`]({{ '/llms.txt' | relative_url }}) at the site root, following the [llmstxt.org](https://llmstxt.org) proposal structure: an H1 title, a blockquote summary, and H2-delimited sections of markdown links. It covers all 26 real content pages on the site, verified by diffing the file's links against the actual built sitemap.
+Added [`llms.txt`]({{ '/llms.txt' | relative_url }}) at the site root, following the [llmstxt.org](https://llmstxt.org) proposal structure: an H1 title, a blockquote summary, and H2-delimited sections of markdown links. It covers all 27 real content pages on the site (26 pre-existing pages plus this one, added after a review comment flagged its own absence), verified by diffing the file's links against the actual built sitemap.
 
 ### An agent-facing directive
 
@@ -75,7 +75,9 @@ Each change was checked individually against a running local server with the sam
 | `llms-txt-directive-html` | Fail—no directive found | Pass—found on all pages tested |
 | `page-size-html` | Fail—1 of 28 pages over 100K (42K HTML → 173K markdown) | Pass—same page now 31K HTML → 10K markdown |
 
-I haven't re-run the full-site audit against production yet, since these changes haven't shipped. That's the natural next step once this merges, to confirm the individually verified fixes hold up in combination, not just in isolation.
+I re-ran the full-site audit against production after this shipped. The individually verified fixes hold up: `llms.txt` now covers 100% of the site's 27 pages, and `docs/api-documentation/`'s size and directive placement both check out cleanly when tested in isolation, matching the preceding numbers exactly.
+
+The full-site crawl also surfaced one new, minor edge case the earlier per-page checks didn't catch: the directive gets flagged as buried past 50% on the 404 page specifically. That page has almost no real content, one heading, one sentence, so the sidebar and icon markup that precedes `<main>` in the DOM dominates its small total size in a way it doesn't on any real content page. I'm leaving it as-is: it's a single low-traffic edge case, and an agent that's already hit a 404 has already failed to find real content there.
 
 ## What's still open
 
