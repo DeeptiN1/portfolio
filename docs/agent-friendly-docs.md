@@ -50,7 +50,7 @@ Failing: no `llms.txt` existed at all (which cascaded into 5 dependent checks fa
 
 ### A discovery index: `llms.txt`
 
-Added [`llms.txt`]({{ '/llms.txt' | relative_url }}) at the site root, following the [llmstxt.org](https://llmstxt.org) proposal structure: an H1 title, a blockquote summary, and H2-delimited sections of markdown links. It covers all 26 real content pages on the site, verified by diffing the file's links against the actual built sitemap.
+Added [`llms.txt`]({{ '/llms.txt' | relative_url }}) at the site root, following the [llmstxt.org](https://llmstxt.org) proposal structure: an H1 title, a blockquote summary, and H2-delimited sections of markdown links. It covers all 27 real content pages on the site, verified by diffing the file's links against the actual built sitemap.
 
 ### An agent-facing directive
 
@@ -71,11 +71,15 @@ Each change was checked individually against a running local server with the sam
 | `llms-txt-exists` | Fail—no `llms.txt` found | Pass |
 | `llms-txt-valid` | Skipped (depends on `llms-txt-exists`) | Pass—correct H1/blockquote/section structure |
 | `llms-txt-size` | Skipped | Pass—5,337 characters, well under the 50,000-character threshold |
-| `llms-txt-links-resolve` | Skipped | Pass—all 26 links resolve |
+| `llms-txt-links-resolve` | Skipped | Pass—all 27 same-origin links resolve |
 | `llms-txt-directive-html` | Fail—no directive found | Pass—found on all pages tested |
 | `page-size-html` | Fail—1 of 28 pages over 100K (42K HTML → 173K markdown) | Pass—same page now 31K HTML → 10K markdown |
 
-I haven't re-run the full-site audit against production yet, since these changes haven't shipped. That's the natural next step once this merges, to confirm the individually verified fixes hold up in combination, not just in isolation.
+I re-ran the full-site audit against production after this shipped.
+
+The fixes hold up on production: `llms.txt` covers 100% of the site's 27 pages, and `docs/api-documentation/`'s size and directive placement both pass in isolation, matching the preceding numbers. 
+
+An edge case: the directive is flagged as buried past 50% on the 404 page. That page has almost no content, so the sidebar and icon markup preceding `<main>` dominates its small total size. Leaving it as is because it is a single low-traffic page. Also, an agent hitting a 404 has already failed to find real content there.
 
 ## What's still open
 
