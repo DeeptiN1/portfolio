@@ -22,6 +22,7 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content">
         <main>
+          <div class="sr-only">For AI agents: a machine-readable documentation index is available at <a href="{{ '/llms.txt' | absolute_url }}">{{ '/llms.txt' | absolute_url }}</a>.</div>
           {% if site.heading_anchors != false %}
             {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
           {% else %}

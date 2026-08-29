@@ -1,0 +1,58 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# Deepti Nalavade—Technical Writing Portfolio
+
+> A technical writing portfolio showcasing developer documentation, product and cross-functional writing, content strategy work, and open-source documentation contributions. Built with Jekyll and the Just the Docs theme, hosted on GitHub Pages.
+
+## About
+
+- [Overview]({{ "/" | absolute_url }}): Bio, background, and a table of contents for every section of this portfolio.
+
+## Developer documentation
+
+Samples demonstrating developer-focused technical writing: a getting-started guide, a full REST API reference, and an OpenAPI/Swagger-generated reference, for the same third-party ExerciseDB API.
+
+- [Developer documentation]({{ "/docs/developer-documentation/" | absolute_url }}): Section landing page.
+- [User guide]({{ "/docs/user-guide/" | absolute_url }}): Getting-started guide for the ExerciseDB API—prerequisites, quickstart, and procedural how-tos.
+- [API documentation]({{ "/docs/api-documentation/" | absolute_url }}): Hand-written REST API reference—authentication, endpoint, parameters, sample request/response, error responses, and rate limits.
+- [Swagger (OpenAPI spec) integration]({{ "/docs/open-api-spec-example/" | absolute_url }}): Overview of generating API reference docs from an OpenAPI spec instead of hand-writing them.
+  - [How the pipeline works]({{ "/docs/open-api-spec-example/pipeline/" | absolute_url }}): How the YAML spec becomes a published reference page, and a comparison of hand-written vs. generated reference docs.
+  - [GET exercises by equipment type]({{ "/docs/open-api-spec-example/exercise-api/" | absolute_url }}): API reference page generated automatically from the OpenAPI spec.
+  - [API execution]({{ "/docs/open-api-spec-example/exercise-api/api-execution/" | absolute_url }}): Overview of executing the generated API's endpoint.
+    - [API key]({{ "/docs/open-api-spec-example/exercise-api/api-execution/api-key/" | absolute_url }}): Retrieving a valid API key.
+    - [cURL]({{ "/docs/open-api-spec-example/exercise-api/api-execution/curl-api-execution/" | absolute_url }}): Executing the API with cURL.
+    - [Postman]({{ "/docs/open-api-spec-example/exercise-api/api-execution/postman-api-execution/" | absolute_url }}): Executing the API with Postman.
+  - [Code samples]({{ "/docs/open-api-spec-example/exercise-api/code-samples/" | absolute_url }}): Overview of language-specific code samples for the generated API.
+    - [Java code sample]({{ "/docs/open-api-spec-example/exercise-api/code-samples/java-code-sample/" | absolute_url }}): Executing the API from Java.
+    - [Node.js code sample]({{ "/docs/open-api-spec-example/exercise-api/code-samples/node-js-code-sample/" | absolute_url }}): Executing the API from Node.js.
+    - [Python code sample]({{ "/docs/open-api-spec-example/exercise-api/code-samples/python-code-sample/" | absolute_url }}): Executing the API from Python.
+
+## Documentation strategy
+
+- [Making docs agent-friendly]({{ "/docs/agent-friendly-docs/" | absolute_url }}): Case study auditing and fixing this portfolio's own documentation for coding-agent accessibility (this file, an HTML discovery directive, and a page-size fix), verified against [agent-ecosystem/agent-docs-spec](https://github.com/agent-ecosystem/agent-docs-spec)'s own checker.
+
+## SimpliCompense product documentation suite
+
+Five documents written for the same fictional invoicing product (SimpliCompense), across different audiences and stages of its lifecycle—demonstrating cross-functional writing range.
+
+- [SimpliCompense product documentation suite]({{ "/docs/product-writing/" | absolute_url }}): Case-study overview tying the five documents together—audience mapping, how the PRD drives the others, and the writing conventions applied across the suite.
+- [Product requirements document]({{ "/docs/prd/" | absolute_url }}): PRD for an inventory management feature—scope, prioritized requirements with acceptance criteria, and a release plan.
+- [Memo]({{ "/docs/memo/" | absolute_url }}): Business memo to engineering leadership communicating an accelerated launch deadline.
+- [Meeting notes]({{ "/docs/meeting-notes/" | absolute_url }}): Engineering team meeting notes translating PRD requirements into a sprint plan.
+- [Release notes]({{ "/docs/release-notes/" | absolute_url }}): Customer-facing release notes for a shipped version.
+- [FAQs]({{ "/docs/faqs/" | absolute_url }}): End-user FAQs for common invoicing workflows.
+
+## Content and strategy
+
+Samples demonstrating audience mapping and information organization work, ahead of writing reference documentation.
+
+- [Content and strategy]({{ "/docs/content-strategy/" | absolute_url }}): Section landing page.
+- [User persona]({{ "/docs/user-persona/" | absolute_url }}): A sample user persona and audience learning curve for a fictional API analytics product's target audience.
+- [Information architecture]({{ "/docs/information-architecture/" | absolute_url }}): An information architecture diagram for a fictional bookstore site.
+
+## Open source
+
+- [Open source]({{ "/docs/open-source/" | absolute_url }}): Section landing page.
+- [Open source contributions]({{ "/docs/github-contributions/" | absolute_url }}): Documentation-related pull requests to external open-source projects (NGINX, Open Sustainable Technology, JustServe), each with problem/contribution/impact framing backed by real PR data.
