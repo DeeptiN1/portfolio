@@ -75,9 +75,11 @@ Each change was checked individually against a running local server with the sam
 | `llms-txt-directive-html` | Fail—no directive found | Pass—found on all pages tested |
 | `page-size-html` | Fail—1 of 28 pages over 100K (42K HTML → 173K markdown) | Pass—same page now 31K HTML → 10K markdown |
 
-I re-ran the full-site audit against production after this shipped. The individually verified fixes hold up: `llms.txt` now covers 100% of the site's 27 pages, and `docs/api-documentation/`'s size and directive placement both check out cleanly when tested in isolation, matching the preceding numbers exactly.
+I re-ran the full-site audit against production after this shipped.
 
-The full-site crawl also surfaced one new, minor edge case the earlier per-page checks didn't catch: the directive gets flagged as buried past 50% on the 404 page specifically. That page has almost no real content, one heading, one sentence, so the sidebar and icon markup that precedes `<main>` in the DOM dominates its small total size in a way it doesn't on any real content page. I'm leaving it as-is: it's a single low-traffic edge case, and an agent that's already hit a 404 has already failed to find real content there.
+The fixes hold up on production: `llms.txt` covers 100% of the site's 27 pages, and `docs/api-documentation/`'s size and directive placement both pass in isolation, matching the preceding numbers. 
+
+An edge case: the directive is flagged as buried past 50% on the 404 page. That page has almost no content, so the sidebar and icon markup preceding `<main>` dominates its small total size. Leaving it as is because it is a single low-traffic page. Also, an agent hitting a 404 has already failed to find real content there.
 
 ## What's still open
 
