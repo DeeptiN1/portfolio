@@ -29,6 +29,10 @@ Samples demonstrating developer-focused technical writing: a getting-started gui
     - [Node.js code sample]({{ "/docs/open-api-spec-example/exercise-api/code-samples/node-js-code-sample/" | absolute_url }}): Executing the API from Node.js.
     - [Python code sample]({{ "/docs/open-api-spec-example/exercise-api/code-samples/python-code-sample/" | absolute_url }}): Executing the API from Python.
 
+## Documentation strategy
+
+- [Making docs agent-friendly]({{ "/docs/agent-friendly-docs/" | absolute_url }}): Case study auditing and fixing this portfolio's own documentation for coding-agent accessibility (this file, an HTML discovery directive, and a page-size fix), verified against [agent-ecosystem/agent-docs-spec](https://github.com/agent-ecosystem/agent-docs-spec)'s own checker.
+
 ## SimpliCompense product documentation suite
 
 Five documents written for the same fictional invoicing product (SimpliCompense), across different audiences and stages of its lifecycle—demonstrating cross-functional writing range.
