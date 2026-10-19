@@ -25,7 +25,7 @@ Documentation-related contributions to open source GitHub projects.
 ## Perses: advertising all supported datasources on the homepage
 *[Perses](https://www.cncf.io/projects/perses/) is a [Cloud Native Computing Foundation (CNCF)](https://contribute.cncf.io/) sandbox project: an open specification and tool for building, embedding, and sharing observability dashboards.*
 
-**Problem:** [Issue #4410](https://github.com/perses/perses/issues/4410) on the Perses repo flagged that both the [perses.dev](https://perses.dev/) homepage and the `perses/perses` README still named only the first four datasources Perses supported (Prometheus, Tempo, Loki, Pyroscope), reading as if those were the only options, with no link to the full, dynamically-updated list.
+**Problem:** [Issue #4410](https://github.com/perses/perses/issues/4410) on the Perses repo flagged that both the [perses.dev](https://perses.dev/) homepage and the `perses/perses` README still named only the first four datasources Perses supported (Prometheus, Tempo, Loki, Pyroscope), reading as if those were the only options, with no link to the full, dynamically updated list.
 
 **My contribution:** I opened two companion PRs to close the gap. On the homepage, I kept those four as examples of the observability pillars, explicitly stated that Perses supports other datasources too, and linked to the [Datasources documentation](https://perses.dev/perses/docs/concepts/datasource/) from both the "Observability display" card and the "Visualize your data" section. 
 
