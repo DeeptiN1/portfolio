@@ -62,6 +62,8 @@ At a high level, there are three components that do the work: the device, the ba
 
 ```mermaid
 flowchart LR
+    accTitle: ZaiNar positioning signal flow
+    accDescr: The UE transmits a Sounding Reference Signal to the gNB base station to maintain its network connection. The gNB forwards sub-nanosecond timestamped signal data to ZaiNar's technology, which turns that timing data into a location.
     UE["UE\n(transmits SRS for\nnormal connectivity)"] -->|Sounding Reference Signal| gNB["gNB\n(base station)"]
     gNB -->|Sub-nanosecond\ntimestamped signal data| ZT["ZaiNar technology\n(turns timing data\ninto a location)"]
 ```
