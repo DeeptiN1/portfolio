@@ -62,7 +62,7 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 * [Connect with me on LinkedIn](https://www.linkedin.com/in/deeptinalavade)
   {: .fs-5 .fw-300 }
 
-* [View/Download my Resume]({{ '/assets/Deepti_Nalavade_Senior_Technical_Writer.pdf' | relative_url }})
+* [View/Download my Resume]({{ '/assets/Deepti_Nalavade_Technical_Writer.pdf' | relative_url }})
   {: .fs-5 .fw-300 }
 
 ## Portfolio contents
