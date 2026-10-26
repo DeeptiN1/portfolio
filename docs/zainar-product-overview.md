@@ -52,7 +52,7 @@ ZaiNar's network-side approach delivers the following features:
 - **Self-calibrating:** Accuracy improves over time as the system learns each new deployment environment.
 - **Carrier- and protocol-agnostic:** The same network-side logic as extending to Wi-Fi and other radio protocols, not just 5G.
 
-This device-side-to-network-side shift is a power, compute, and security improvement for the 5G network itself in addition to    providing a positioning upgrade.
+This device-side-to-network-side shift is a power, compute, and security improvement for the 5G network itself in addition to providing a positioning upgrade.
 
 ## How ZaiNar achieves sub-10 cm positioning
 
