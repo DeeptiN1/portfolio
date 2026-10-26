@@ -47,7 +47,7 @@ ZaiNar's network-side approach delivers the following features:
 
 - **Sub-10 cm 3D accuracy:** Outdoors, indoors, underground, and in GPS-denied environments, built on sub-nanosecond network time synchronization.
 - **Zero device or hardware changes:** Runs entirely as network-side software. No added battery drain on the tracked device.
-- **100–500 location updates per second:** Fast enough to track drones, vehicles, and robots, not just stationary assetsn versus standard 5G sending positioning reference signals (PRS/PSRS) roughly once per second.
+- **100–500 location updates per second:** Fast enough to track drones, vehicles, and robots, not just stationary assets, versus standard 5G sending positioning reference signals (PRS/PSRS) roughly once per second.
 - **As little as 10 MHz of spectrum:** The only 5G positioning approach workable on bandwidth-constrained private 5G and low-power 5G IoT networks.
 - **Self-calibrating:** Accuracy improves over time as the system learns each new deployment environment.
 - **Carrier- and protocol-agnostic:** The same network-side logic as extending to Wi-Fi and other radio protocols, not just 5G.
