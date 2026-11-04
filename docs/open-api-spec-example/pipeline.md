@@ -30,19 +30,19 @@ The docs-as-code pipeline that turns an OpenAPI spec into a published reference 
 %%{init: {'themeVariables': {'fontSize': '18px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 50}}}%%
 flowchart TD
     accTitle: OpenAPI docs-as-code pipeline
-    accDescr: The OpenAPI 3.0 source YAML file is loaded by Jekyll into Liquid as site data. A page's front matter points at a path and method in that data. Swagger-parser includes read the data and render tables, producing the published reference page a visitor sees.
-    A["_data/swagger/exercise_api.yaml\n(1. OpenAPI 3.0 source)"] -->|Jekyll loads YAML files under _data/ automatically| B["site.data.swagger.exercise_api\n(2. parsed into Liquid as data)"]
-    B -->|Page front matter points at a path + method in that data| C["exercise-api/index.md\n(page front matter)"]
-    C -->|"{% include swagger_parsers/*.md %} reads the data and renders tables"| D["Published reference page\n(3. what a visitor sees)"]
+    accDescr: The OpenAPI 3.0 source YAML file is loaded by Jekyll as site data. A page's front matter points at a path and method in that data. Swagger-parser includes read the data and render tables, producing the published reference page a visitor sees.
+    A["_data/swagger/exercise_api.yaml\n(Step 1: OpenAPI 3.0 source)"] -->|Jekyll loads YAML files under _data/ automatically| B["site.data.swagger.exercise_api\n(parsed into site data)"]
+    B -->|Page front matter points at a path + method in that data| C["exercise-api/index.md\n(Step 2: page front matter)"]
+    C -->|"{% include swagger_parsers/*.md %} reads the data and renders tables"| D["Published reference page\n(Step 3: what a visitor sees)"]
 ```
 {% endraw %}
 
 ## Pipeline explained
-Refer to the [exercise API YAML spec file](https://github.com/DeeptiN1/portfolio/tree/main/_data/swagger/exercise_api.yaml).
+**Step 1.** Refer to the [exercise API YAML spec file](https://github.com/DeeptiN1/portfolio/tree/main/_data/swagger/exercise_api.yaml).
 
 ↓
 
-See the [source of the published page](https://github.com/DeeptiN1/portfolio/blob/main/docs/open-api-spec-example/exercise-api/index.md) that consumes the YAML file, with just front matter and includes, no handwritten reference content.
+**Step 2.** See the [source of the published page (exercise-api/index.md)](https://github.com/DeeptiN1/portfolio/blob/main/docs/open-api-spec-example/exercise-api/index.md) that consumes the YAML file, with just front matter and includes, no handwritten reference content.
 
 ```yaml
 ---
@@ -63,7 +63,7 @@ Each include (`_includes/swagger_parsers/*.md`) reads `site.data.swagger[page.sw
 
 ↓
 
-See the resulting [published page]({% link docs/open-api-spec-example/exercise-api/index.md %}).
+**Step 3.** See the resulting [published page]({% link docs/open-api-spec-example/exercise-api/index.md %}).
 
 ## Manual page vs. auto-generated page
 
