@@ -47,13 +47,22 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 ## Impact
 {: .fs-7 .fw-300 }
 
-* Documentation efforts contributed to a 94% completion rate across 39 platform epics in a recent role.
+* Documentation efforts contributed to a 94% completion rate across platform epics in a recent role.
   {: .fs-5 .fw-300 }
 
 * Docs-as-Code workflows, which I built, saved developers 90% of the time they previously spent hunting for information.
   {: .fs-5 .fw-300 }
 
+* As the sole technical writer in a recent role, I created documentation that turned developer onboarding across business units, which was previously days to weeks of one-on-one SME meetings, into a self-serve, self-directed process.
+  {: .fs-5 .fw-300 }
+
 * I've authored 79+ Confluence pages (touching 110+ total) used across engineering, product, and DevOps teams.
+  {: .fs-5 .fw-300 }
+
+* My open-source documentation contributions to GitHub projects improved efficiency, making features easier to understand.
+  {: .fs-5 .fw-300 }
+
+* My documentation was structured well enough for AI coding agents in MCP-configured IDEs to consume directly, helping developers resolve their own questions.
   {: .fs-5 .fw-300 }
 
 ## LinkedIn and resume
@@ -70,8 +79,9 @@ I'm a Senior Technical Writer with 15+ years of combined experience across softw
 
 | Section | Pages |
 |:---|:---|
-| [About]({{ '/' | relative_url }}) | Overview |
+| [About]({{ '/' | relative_url }}) | Bio and resume |
 | [Developer documentation](docs/developer-documentation/) | [User Guide](docs/user-guide/) → [API Documentation](docs/api-documentation/) → [OpenAPI/Swagger integration](docs/open-api-spec-example/) (with child pages) |
+| [Making docs agent-friendly](docs/agent-friendly-docs/) | Agent-readiness audit and fix pass |
 | [SimpliCompense product documentation suite](docs/product-writing/) | [PRD](docs/prd/), [Memo](docs/memo/), [Meeting Notes](docs/meeting-notes/), [Release Notes](docs/release-notes/), [FAQs](docs/faqs/) |
 | [Content and Strategy](docs/content-strategy/) | [User Persona](docs/user-persona/), [Information Architecture](docs/information-architecture/), [Product Overview of ZaiNar](docs/zainar-product-overview/) |
 | [Open source](docs/open-source/) | [GitHub Contributions](docs/github-contributions/) |
