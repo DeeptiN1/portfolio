@@ -26,14 +26,14 @@ The docs-as-code pipeline that turns an OpenAPI spec into a published reference 
 ## Pipeline overview
 
 {% raw %}
-```
-_data/swagger/exercise_api.yaml          (1. OpenAPI 3.0 source)
-        ↓  Jekyll loads *.yaml under _data/ automatically
-site.data.swagger.exercise_api           (2. parsed into Liquid as data)
-        ↓  page front matter points at a path + method in that data
-docs/open-api-spec-example/exercise-api/index.md
-        ↓  {% include swagger_parsers/*.md %} reads the data and renders tables
-Published reference page                  (3. what a visitor sees)
+```mermaid
+%%{init: {'themeVariables': {'fontSize': '18px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 50}}}%%
+flowchart TD
+    accTitle: OpenAPI docs-as-code pipeline
+    accDescr: The OpenAPI 3.0 source YAML file is loaded by Jekyll into Liquid as site data. A page's front matter points at a path and method in that data. Swagger-parser includes read the data and render tables, producing the published reference page a visitor sees.
+    A["_data/swagger/exercise_api.yaml\n(1. OpenAPI 3.0 source)"] -->|Jekyll loads YAML files under _data/ automatically| B["site.data.swagger.exercise_api\n(2. parsed into Liquid as data)"]
+    B -->|Page front matter points at a path + method in that data| C["exercise-api/index.md\n(page front matter)"]
+    C -->|"{% include swagger_parsers/*.md %} reads the data and renders tables"| D["Published reference page\n(3. what a visitor sees)"]
 ```
 {% endraw %}
 
